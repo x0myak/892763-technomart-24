@@ -6,58 +6,123 @@
   </head>
   <body>
     <header class="main-header">
-      <nav class="main-navigation">
-        <img "http://placehold.it" width="" height="" alt="Логотип магазина Техномарт">
-      <div class="user-navigation">
-        <a href="search.html">Поиск</a> <!-- результаты поиска открываются в новом окне? -->
-        <a href="basket.html">Корзина</a>
-        <a href="order.html">Оформить заказ</a>
+      <div class="header--top-level">
+        <div class="header-navigation">
+          <a href="imdex.html">
+            <img src="http://placehold.it" width="100" height="20" alt="Логотип магазина Техномарт">
+          </a>
+          <div class="header-navigation-search">
+            <!-- элемент формы поиска -->
+          </div>
+          <div class="header-navigation-favourites">
+            <a href="favourites.html">Закладки</a>
+          </div>
+          <div class="header-navigation-basket">
+            <a href="basket.html">Корзина</a>
+          </div>
+          <a href="order.html">Оформить заказ</a>
+        </div>
       </div>
-      <h1>Интернет-магазин строительных материалов и инструментов для ремонта</h1>
-      <div class="contacts">
-        <span class="phone-number">+7(812)555-05-55</span>
-        <span class="address">г.Санкт-Петербург, ул.Б.Конюшенная, д.19/8</span>
+      <div class="header--middle-level">
+        <h1>Интернет-магазин строительных материалов и инструментов для ремонта</h1>
+        <div class="contacts">
+          <p class="phone-number">+7(812)555-05-55</p>
+          <p class="address">г.Санкт-Петербург, ул.Б.Конюшенная, д.19/8</p>
+        </div>
+        <nav class="user-navigation">
+          <ul>
+            <li>Форма</li>
+            <li><a href="my-orders">Мои заказы</a></li>
+            <li><a href="login">Личный кабинет</a></li>
+          </ul>
+        </nav>
       </div>
-      <div class="user-navigation">
-        <<ul>
-          <li>Форма</li>
-          <li><a href="my-orders">Мои заказы</a></li>
-          <li><a href="login">Личный кабинет</a></li>
+      <div class="header--bottom-level">
+        <ul class="site-navigation">
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="company.html">Компания</a></li>
+            <li><a href="catalog.html">Каталог</a></li>
+            <li><a href="news.html">Новости</a></li>
+            <li><a href="offers.html">Спецпредложения</a></li>
+            <li><a href="delievery.html">Доставка</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
         </ul>
-      </div>
-      <ul class="site-navigation">
-          <li><a href="index.html">Главная</a></li>
-          <li><a href="company.html">Компания</a></li>
-          <li><a href="catalog.html">Каталог</a></li>
-          <li><a href="news.html">Новости</a></li>
-          <li><a href="offers.html">Спецпредложения</a></li>
-          <li><a href="delievery.html">Доставка</a></li>
-          <li><a href="contacts.html">Контакты</a></li>
-        </ul>
-      </nav>
+    </div>
     </header>
     <main>
+      <ul class="breadcrumbs">
+        <li><a href="index.html"></a></li>
+        <li><a href="catalog.html">Каталог</a></li>
+        <li><a href="instruments.html">Инструмент</a></li>
+        <li class="breadcrumbs-current">Перфораторы</li>
+      </ul>
+      <h1>Перфораторы</h1>
+      <section class="filters">
+        <h2>Фильтр:</h2>
 
+        <h3>Производители:</h3>
+        <ul class="filters-producers">
+          <li>Bosch</li>
+          <li>Интерскол</li>
+          <li>Makita</li>
+          <li>Dewalt</li>
+          <li>Hitachi</li>
+        </ul>
+        <h3>Питание:</h3>
+        <ul class="filters-chargers">
+          <li>Аккумуляторные</li>
+          <li>Сетевые</li>
+        </ul>
+        <div class="filters-button">
+          Показать
+        </div>
+      </section>
+      <section class="catalog">
+        <h2 class="visually-hidden">Список перфораторов</h2>
+        <ul class="catalog-list">
+          <li class="catalog-item">
+            <h3>
+             <a href="catalog-item.html">
+              <span class="catalog-item-title">Перфоратор Bosch BFG 3000</span>
+             </a>
+            </h3>
+            <p>
+              <a href="catalog-item.html">
+                <img src="img/product-1.jpg" width="220" height="165" alt="Перфоратор Bosch BFG 3000">
+              </a>
+            </p>
+              <p class="item-price-old">
+                <b>22500 Р.</b>
+                <a class="button" href="#">15500 Р.</a>
+              </p>
+              <a class="button" href="#">Купить</a>
+           </li>
+         </ul>
+      </section>
     </main>
 
     <footer class="main-footer">
-      <img src="http://placehold.it" width="" height="" alt="Логотип магазина Техномарт">
+      <img src="http://placehold.it" width="100" height="20" alt="Логотип магазина Техномарт">
       <p class="footer-contacts">
-        г. Санкт-Петербург, Б. Конюшенная, д. 19/8 </br>
+        г. Санкт-Петербург, Б. Конюшенная, д. 19/8 <br>
         +7(812)555-05-55
       </p>
       <div class="footer-navigation">
+        <ul>
           <li><a href="company.html">Компания</a></li>
           <li><a href="news.html">Новости</a></li>
           <li><a href="catalog.html">Каталог</a></li>
           <li><a href="delievery.html">Доставка</a></li>
           <li><a href="contacts.html">Контакты</a></li>
+        </ul>
       </div>
       <div class="footer-catalog-navigation">
+        <ul>
           <li><a href="materials.html">Материалы</a></li>
           <li><a href="technics.html">Техника</a></li>
           <li><a href="instuments.html">Инструмент</a></li>
           <li><a href="offers.html">Спецпредложения</a></li>
+        </ul>
       </div>
         <p class="footer-copyright">
           <b>2010-2018 Компания "Техномарт"</b>
@@ -71,11 +136,11 @@
         </ul>
       </div>
       <p>
-        <b>Обратная связь:</b></br>
+        <b>Обратная связь:</b><br>
         mail@htmlacademy.ru
       </p>
        <p class="footer-copyright">
-        <b>Разработано:</b></br>
+        <b>Разработано:</b><br>
         <a class="button" href="https://htmlacademy.ru">HTML Academy</a>
       </p>
     </footer>

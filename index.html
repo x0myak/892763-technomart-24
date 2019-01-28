@@ -6,26 +6,36 @@
   </head>
   <body>
     <header class="main-header">
-      <nav class="main-navigation">
-        <img "http://placehold.it" width="" height="" alt="Логотип магазина Техномарт">
-      <div class="user-navigation">
-        <a href="search.html">Поиск</a> <!-- результаты поиска открываются в новом окне? -->
-        <a href="basket.html">Корзина</a>
-        <a href="order.html">Оформить заказ</a>
+      <div class="header--top-level">
+        <div class="header-navigation">
+          <a><img src="http://placehold.it" width="100" height="20" alt="Логотип магазина Техномарт"></a>
+          <div class="header-navigation-search">
+            <!-- элемент формы поиска -->
+          </div>
+          <div class="header-navigation-favourites">
+            <a href="favourites.html">Закладки</a>
+          </div>
+          <div class="header-navigation-basket">
+            <a href="basket.html">Корзина</a>
+          </div>
+          <a href="order.html">Оформить заказ</a>
+        </div>
       </div>
-      <h1>Интернет-магазин строительных материалов и инструментов для ремонта</h1>
-      <div class="header-contacts">
-        <span class="phone-number">+7(812)555-05-55</span>
-        <span class="address">г.Санкт-Петербург, ул.Б.Конюшенная, д.19/8</span>
+      <div class="header--middle-level">
+        <h1>Интернет-магазин строительных материалов и инструментов для ремонта</h1>
+        <div class="header-contacts">
+          <p class="phone-number">+7(812)555-05-55</p>
+          <p class="address">г.Санкт-Петербург, ул.Б.Конюшенная, д.19/8</p>
+        </div>
+        <nav class="user-navigation">
+          <ul>
+            <li>Форма</li>
+            <li><a href="registration.html">Регистрация</a></li>
+          </ul>
+        </nav>
       </div>
-      <div class="user-navigation">
-        <<ul>
-          <li>Форма</li>
-          <li><a href="my-orders">Мои заказы</a></li>
-          <li><a href="login">Личный кабинет</a></li>
-        </ul>
-      </div>
-      <ul class="site-navigation">
+      <div class="header--bottom-level">
+        <ul class="site-navigation">
           <li><a href="index.html">Главная</a></li>
           <li><a href="company.html">Компания</a></li>
           <li><a href="catalog.html">Каталог</a></li>
@@ -34,7 +44,7 @@
           <li><a href="delievery.html">Доставка</a></li>
           <li><a href="contacts.html">Контакты</a></li>
         </ul>
-      </nav>
+      </div>
     </header>
     <main>
       <section class="equipment">
@@ -75,7 +85,7 @@
         <a href="popular-goods.html">Все популярные товары</a>
         <ul class="popular-list">
           <li class="popular-item">
-            <img src="placehold" width="" height="" alt="Перфоратор Bosch BFG 9000">
+            <img src="http://placehold.it" width="100" height="100" alt="Перфоратор Bosch BFG 9000">
             <h3>
               <a href="popular-item.html">
                 <span>Перфоратор Bosch BFG 9000</span>
@@ -87,7 +97,7 @@
             </p>
           </li>
           <li class="popular-item">
-            <img src="placehold" width="" height="" alt="Перфоратор Bosch BFG 3000">
+            <img src="http://placehold.it" width="100" height="100" alt="Перфоратор Bosch BFG 3000">
             <h3>
               <a href="popular-item.html">
                 <span>Перфоратор Bosch BFG 3000</span>
@@ -99,7 +109,7 @@
             </p>
           </li>
           <li class="popular-item">
-            <img src="placehold" width="" height="" alt="Перфоратор Bosch BFG 6000">
+            <img src="http://placehold.it" width="100" height="100" alt="Перфоратор Bosch BFG 6000">
             <h3>
               <a href="popular-item.html">
                 <span>Перфоратор Bosch BFG 6000</span>
@@ -111,7 +121,7 @@
             </p>
           </li>
           <li class="popular-item">
-            <img src="placehold" width="" height="" alt="Перфоратор Bosch BFG 2000">
+            <img src="http://placehold.it" width="100" height="100" alt="Перфоратор Bosch BFG 2000">
             <h3>
               <a href="popular-item.html">
                 <span>Перфоратор Bosch BFG 2000</span>
@@ -133,31 +143,35 @@
         </ul>
         <a href="company.html">Подробнее о компании</a>
       </section>
+      <h2>Контакты</h2>
       <p class="main-contacts">
-        <h2>Контакты</h2>
         Вы можете забрать товар сами, заехав в наш офис:
       </p>
        <a href="map.html"></a><br>
       <a href="#">Заблудились? Напишите нам!</a>
     </main>
     <footer class="main-footer">
-      <img src="http://placehold.it" width="" height="" alt="Логотип магазина Техномарт">
+      <img src="http://placehold.it" width="100" height="100" alt="Логотип магазина Техномарт">
       <p class="footer-contacts">
-        г. Санкт-Петербург, Б. Конюшенная, д. 19/8 </br>
+        г. Санкт-Петербург, Б. Конюшенная, д. 19/8 <br>
         +7(812)555-05-55
       </p>
       <div class="footer-navigation">
+        <ul>
           <li><a href="company.html">Компания</a></li>
           <li><a href="news.html">Новости</a></li>
           <li><a href="catalog.html">Каталог</a></li>
           <li><a href="delievery.html">Доставка</a></li>
           <li><a href="contacts.html">Контакты</a></li>
+        </ul>
       </div>
       <div class="footer-catalog-navigation">
+        <ul>
           <li><a href="materials.html">Материалы</a></li>
           <li><a href="technics.html">Техника</a></li>
           <li><a href="instuments.html">Инструмент</a></li>
           <li><a href="offers.html">Спецпредложения</a></li>
+        </ul>
       </div>
         <p class="footer-copyright">
           <b>2010-2018 Компания "Техномарт"</b>
@@ -171,10 +185,10 @@
         </ul>
       </div>
       <p>
-        <b>Обратная связь:</b></br>
+        Обратная связь:<br>
         mail@htmlacademy.ru
        <p class="footer-copyright">
-        <b>Разработано:</b></br>
+        Разработано:<br>
         <a class="button" href="https://htmlacademy.ru">HTML Academy</a>
       </p>
     </footer>
