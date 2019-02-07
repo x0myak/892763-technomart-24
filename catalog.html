@@ -12,9 +12,12 @@
             <img src="img/technomart_logo.svg" width="110" height="18" alt="Логотип магазина Техномарт">
           </a>
           <div class="header-navigation-tools">
-            <!-- элемент формы поиска -->       
+            <form action="https://echo.htmlacademy.ru" method="get">              
+              <button type="submit"></button>   <!-- для иконки поиска. Или это ссылка? -->
+              <input name="search" type="search" value="Поиск:">
+            </form>         
             <a class="header-navigation-favourites" href="favourites.html">Закладки</a>
-            <a class="header-navigation-basket" href="basket.html">Корзина</a>         
+            <a class="header-navigation-basket" href="basket.html">Корзина:10</a>         
             <a class="header-navigation-order" href="order.html">Оформить заказ</a>
          </div>
         </div>
@@ -27,7 +30,12 @@
         </div>
         <div class="user-block">          
           <ul> 
-            <li class="user-block-top-profile"><a  href="profile.html">Имя пользователя</a></li>
+            <li class="user-block-top-profile">
+              <form action="https://htmlacademy.ru" method="post">
+                <input type="text" name="user-name" value="Равшан Джамшутович" >
+                <button type="submit">Войти</button>
+              </form>
+            </li>
             <li class="user-block-top-exit"><a href="#"></a></li> 
           </ul>
           <ul>        
