@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>Техномарт</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
@@ -11,11 +14,11 @@
           <a><img src="img/technomart_logo.svg" width="111" height="18" alt="Логотип магазина Техномарт"></a>
           <div class="header-navigation-tools">
             <form action="https://htmlacademy.ru" method="get">
-              <button type="submit"></button>   <!-- для иконки поиска. Или это ссылка? -->
-              <input name="search" type="search" value="Поиск:">
+              <button type="submit"></button>
+              <input name="search" type="search" placeholder="Поиск:">
             </form>
-            <a class="header-navigation-favourites" href="favourites.html">Закладки</a>
-            <a class="header-navigation-basket" href="basket.html">Корзина</a>
+            <a class="header-navigation-favourites" href="favourites.html">Закладки:<span>0</span></a>
+            <a class="header-navigation-basket" href="basket.html">Корзина:<span>0</span></a>
             <a href="order.html">Оформить заказ</a>
           </div>
         </div>
@@ -26,12 +29,12 @@
           <a class="phone-number" href="tel:+78125550555">+7 (812) 555-05-55</a>
           <p class="address">г.Санкт-Петербург, ул.Б.Конюшенная, д.19/8</p>
         </div>
-        <nav class="user-navigation">
+        <div class="user-block">
           <ul>
             <li><a href="login.html">Войти</a></li>
             <li><a href="registration.html">Регистрация</a></li>
           </ul>
-        </nav>
+        </div>
       </div>
       <nav class="bottom-level">
         <ul class="site-navigation">
@@ -163,28 +166,28 @@
         <a href="producers.html">Все производители</a>
         <ul class="popular-producers-list">
           <li class="popular-producer-item">
-            <img src="img/bosch_logo.jpg" width="126" height="37" alt="Логотип компании Bosch">
+            <a href="#"><img src="img/bosch_logo.jpg" width="126" height="37" alt="Логотип компании Bosch"></a>
           </li>
           <li class="popular-producer-item">
-            <img src="img/makita_logo.jpg" width="123" height="40" alt="Логотип компании Makita">
+            <a href="#"><img src="img/makita_logo.jpg" width="123" height="40" alt="Логотип компании Makita"></a>
           </li>
           <li class="popular-producer-item">
-            <img src="img/de-walt_logo.jpg" width="146" height="44" alt="Логотип компании Dewalt">
+            <a href="#"><img src="img/de-walt_logo.jpg" width="146" height="44" alt="Логотип компании Dewalt"></a>
           </li>
           <li class="popular-producer-item">
-            <img src="img/interskol_logo.jpg" width="200" height="88" alt="Логотип компании Интерскол">
+            <a href="#"><img src="img/interskol_logo.jpg" width="200" height="88" alt="Логотип компании Интерскол"></a>
           </li>
           <li class="popular-producer-item">
-            <img src="img/hitachi_logo.jpg" width="169" height="31" alt="Логотип компании Hitachi">
+            <a href="#"><img src="img/hitachi_logo.jpg" width="169" height="31" alt="Логотип компании Hitachi"></a>
           </li>
           <li class="popular-producer-item">
-            <img src="img/lg_logo.jpg" width="121" height="73" alt="Логотип компании LG">
+           <a href="#"><img src="img/lg_logo.jpg" width="121" height="73" alt="Логотип компании LG"></a>
           </li>
           <li class="popular-producer-item">
-            <img src="img/aeg_logo.jpg" width="151" height="96" alt="Логотип компании AEG">
+           <a href="#"><img src="img/aeg_logo.jpg" width="151" height="96" alt="Логотип компании AEG"></a>
           </li>
           <li class="popular-producer-item">
-            <img src="img/metabo_logo.jpg" width="204" height="69" alt="Логотип компании Metabo">
+            <a href="#"><img src="img/metabo_logo.jpg" width="204" height="69" alt="Логотип компании Metabo"></a>
           </li>
         </ul>
       </section>
@@ -273,7 +276,7 @@
     <section class="modal modal-map">
       <h2 class="visually-hidden"> Как добраться</h2>
       <p>
-        <img src="img/map@3x.jpg" width="940" height="446" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+        <img src="img/map_big.jpg" width="940" height="446" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
       </p>
       <button class="modal-close" type="button">Закрыть</button>
     </section>

@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>Техномарт</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
@@ -13,7 +16,7 @@
           </a>
           <div class="header-navigation-tools">
             <form action="https://echo.htmlacademy.ru" method="get">
-              <button type="submit"></button>   <!-- для иконки поиска. Или это ссылка? -->
+              <button type="submit"></button>
               <input name="search" type="search" value="Поиск:">
             </form>
             <a class="header-navigation-favourites" href="favourites.html">Закладки: <span>0</span></a>
@@ -28,11 +31,11 @@
           <a class="phone-number" href="tel:+78125550555">+7 (812) 555-05-55</a>
           <p class="address">г.Санкт-Петербург, ул.Б.Конюшенная, д.19/8</p>
         </div>
-        <div class="user-block">
+        <div class="user-block user-block-catalog">
           <ul>
             <li class="user-block-top-profile">
               <a href="profile.html">Равшан Джамшутович</a>
-              <button type="submit">Выйти</button>
+              <a href="#"></a>
             </li>
             <li class="user-block-top-exit"><a href="#"></a></li>
           </ul>
@@ -317,8 +320,9 @@
     </footer>
 
     <section class="modal modal-basket">
-      Товар добавлен в корзину!
-      <button type="submit" name="submit">Оформить заказ</button>
+      <h3 class="visually-hidden">Действия посетителя</h3>
+      <p>Товар добавлен в корзину!</p>
+      <a href="#">Оформить заказ</a>
       <a href="catalog.html">Продолжить покупки</a>
       <button class="modal-close" type="button">Закрыть</button>
     </section>
