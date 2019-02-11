@@ -1,0 +1,70 @@
+body {
+  font-family: 'PT Sans', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul {
+  list-style: none;
+}
+
+.main-header {
+  font-size: 17px;
+  line-height: 1.06;
+  text-align: left;
+  color: #ffffff;
+  background-color: #f4f7f9;
+}
+
+.main-header .middle-level {
+  font-size: 21px;
+  line-height: 1;
+  color: #000000;
+}
+
+.middle-level h1 {
+  font-size: 16px;
+  font-style: italic;
+  line-height: 1.44;
+  text-align: left;
+  color: #ee3643;
+}
+
+.middle-level .phone-number {
+  color: #ee3643;
+}
+
+.middle-level .address {
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.main-footer {
+  font-size: 18px;
+  line-height: 1.33;
+  color: #f3f7f9;
+  background-color: #32425c;
+}
+
+.footer-navigation a {
+   color: #f3f7f9;
+}
+
+
+.footer-catalog-navigation a,
+.footer-copyright a {
+  color: #ffd180;
+
+}
+
+.footer-copyright {
+  background-color: #293449;
+}
+
+.modal {
+  display: none;
+}
+
