@@ -1,6 +1,11 @@
 body {
   margin: 0;
-  font-family: "Cuprum","PT Sans", sans-serif;  
+  padding: 0;
+  font-family: 'Cuprum', 'Arial', sans-serif;   
+  font-size: 21px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal; 
   color: #ffffff;
 }
 
@@ -8,7 +13,8 @@ a {
   text-decoration: none;
 }
 
- ul {
+ .user-block,
+ .site-navigation {
   list-style: none;
 }
 
