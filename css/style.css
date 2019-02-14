@@ -1,35 +1,75 @@
 body {
-  font-family: 'PT Sans', sans-serif;
+  margin: 0;
+  font-family: "Cuprum","PT Sans", sans-serif;  
+  color: #ffffff;
 }
 
-a {
+a {  
   text-decoration: none;
-  color: black;
 }
 
-ul {
+ ul {
   list-style: none;
 }
 
 .main-header {
-  font-size: 17px;
-  line-height: 1.06;
+  font-size: 17px;  
   text-align: left;
   color: #ffffff;
   background-color: #f4f7f9;
 }
 
+.main-header .top-level,
+.search {
+  line-height: 1.06;   
+  background-color: #293449;
+}
+
+.main-header .top-level a:hover,
+.search:hover {
+  background-color: #212a3a;
+}
+
+.main-header .top-level a:focus {
+  background-color: #161d29;
+}
+
+.search:focus {
+  background-color: #ffffff;
+}
+
+.technomart-logo {  
+  background-color: #ee3643;
+}
+
+.technomart-logo:hover {
+  background-color: #ca2c37;
+  }
+
+.technomart-logo:focus {
+  background-color: #ba2732;
+  }
+
+.header-navigation-order {
+  background-color: #63a63e;
+}
+
+.header-navigation-order:hover {
+  background-color: #5fbb2d;
+}
+
+.header-navigation-order:focus {
+  background-color: #518534;
+}
+
 .main-header .middle-level {
-  font-size: 21px;
-  line-height: 1;
-  color: #000000;
+  font-size: 21px;    
 }
 
 .middle-level h1 {
   font-size: 16px;
   font-style: italic;
-  line-height: 1.44;
-  text-align: left;
+  line-height: 1.44;  
   color: #ee3643;
 }
 
@@ -40,7 +80,34 @@ ul {
 .middle-level .address {
   font-size: 14px;
   line-height: 1.71;
+  text-align: center;
+  color: #32425c;
 }
+
+.middle-level a {
+  color: #000000;
+}
+
+.middle-level a:hover {
+  color: #ee3643;
+}
+
+.middle-level a:focus {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.main-header .bottom-level {
+  font-size: 17px;
+  background-color: #32425c;
+}
+
+.main-header .top-level a,
+.main-header .bottom-level a {
+  color: #ffffff;
+}
+
+
+/*
 
 .main-footer {
   font-size: 18px;
@@ -64,6 +131,7 @@ ul {
   background-color: #293449;
 }
 
+*/
 .modal {
   display: none;
 }
