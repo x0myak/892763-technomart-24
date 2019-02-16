@@ -100,13 +100,14 @@ a {
   background-color: #518534;
 }
 
+.catalog .header-navigation-basket.color-change {
+  background-color: #ee3643;
+}
+
+
 .middle-level {
   font-size: 21px;
   color: #ee3643;
-}
-
-.middle-level a {
-  color: inherit;
 }
 
 .middle-level h1 {
