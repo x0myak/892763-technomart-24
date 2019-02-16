@@ -1,16 +1,18 @@
 body {
   margin: 0;
   padding: 0;
-  
-  font-family: "Cuprum", Arial, sans-serif;   
+
+  font-family: "Cuprum", Arial, sans-serif;
   font-size: 21px;
-  font-weight: normal;
+  font-weight: 400;
+  line-height: 18px;
   font-style: normal;
-  font-stretch: normal; 
+  font-stretch: normal;
+  text-align: left;
   color: #ffffff;
 }
 
-a {  
+a {
   text-decoration: none;
 }
 
@@ -19,24 +21,35 @@ a {
 }
 
 .visually-hidden {
-  display: none;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .main-header {
-  font-size: 17px;  
-  text-align: left;
-  color: #ffffff;
+  font-size: 17px;
   background-color: #f4f7f9;
 }
 
-.technomart-logo {  
+.main-header a {
+  color: inherit;
+}
+
+.technomart-logo {
   background-color: #ee3643;
 }
 
-.main-header .top-level,
-.search {
-  line-height: 18px;   
+.main-header .top-level {
   background-color: #293449;
+}
+
+.search {
+  background-color: transparent;
 }
 
 .header-navigation-order {
@@ -87,24 +100,24 @@ a {
   background-color: #518534;
 }
 
-.main-header .middle-level {
-  font-size: 21px;    
+.middle-level {
+  font-size: 21px;
+  color: #ee3643;
+}
+
+.middle-level a {
+  color: inherit;
 }
 
 .middle-level h1 {
   font-size: 16px;
   font-style: italic;
-  line-height: 23px;  
-  color: #ee3643;
-}
-
-.middle-level .phone-number {
-  color: #ee3643;
+  line-height: 23px;
 }
 
 .middle-level .address {
   font-size: 14px;
-  line-height: 24px
+  line-height: 24px;
   text-align: center;
   color: #32425c;
 }
@@ -122,9 +135,8 @@ a {
 }
 
 .user-block-bottom {
-  font-size: 16px; 
-  line-height: 18px;
-  text-decoration: underline; 
+  font-size: 16px;
+  text-decoration: underline;
   color: #32425c;
 }
 
@@ -142,11 +154,6 @@ a {
   background-color: #32425c;
 }
 
-.main-header .top-level a,
-.main-header .bottom-level a {
-  color: #ffffff;
-}
-
 .site-navigation a:hover,
 .site-navigation a:focus {
   background-color: #293449;
@@ -157,105 +164,193 @@ a {
   background-color: #1d2739;
 }
 
-.breadcrumbs,
-.breadcrumbs a {
-  font-family: PTSans, Arial, sans-serif;
-  font-size: 13px;  
-  line-height: 18px;  
-  text-align: left;
+.uppercase {
+  text-transform: uppercase;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
   color: #000000;
-  background-color: #ffffff;
 }
 
-.catalog-header {  
-  text-transform: uppercase;
-  font-size: 30px; 
+.breadcrumbs a {
+  color: inherit;
+}
+
+.catalog-header {
+  font-size: 30px;
+  line-height: 30px;
   color: #32425c;
   background-color: #f2f6f8;
 }
 
+form fieldset {
+  border: none;
+}
+
 form.filter {
-  font-family: PTSans, Arial, sans-serif;
-  font-size: 15px; 
-  line-height: 20px;  
-  color: #000000;
+  font-size: 15px;
+  line-height: 20px;
 }
 
 form.filter legend {
   font-size: 17px;
-  font-weight: bold;  
-  line-height: 30px;  
+  font-weight: 700;
+  line-height: 30px;
 }
 
+input[type="checkbox"],
+input[type="radio"] {
+  display: none;
+}
+
+
 form.filter button {
-  font-size: 13px;  
-  line-height: 18px;  
-  text-align: center;  
+  text-transform: inherit;
+  font-size: 13px;
+  text-align: center;
 }
 
 section.catalog {
-  font-family: PTSans, Arial, sans-serif;  
-  font-size: 17px;  
-  line-height: 18px; 
-  text-align: center;  
-  font-weight: bold;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 17px;
+  text-align: center;
+  font-weight: 700;
 }
 
 .catalog-item-title {
-  font-size: 18px;  
+  font-size: 18px;
   line-height: 20px;
   color: #000000;
 }
 
-.item-price-old {  
-  text-decoration: line-through; 
+.item-price-old {
+  text-decoration: line-through;
   color: #999999;
 }
 
-.item-price-new {  
+.item-price-new {
   color: #ffffff;
 }
 
-.about-company,
-.main-contacts {
-  font-size: 13px; 
-  line-height: 24px;  
-  text-align: left;  
+.actions {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.buy {
+  color: inherit;
+  box-shadow: inset 0px -3px 0 0 #367315;
+  background-color: #63a63e;
+}
+
+.bookmark {
+  border: 3px solid #63a63e;
+  color: #32425c;
+}
+
+.buy:hover,
+.buy:focus {
+  box-shadow: inset 0px -3px 0 0 #367315;
+  background-color: #5fbb2d;
+}
+
+.bookmark:hover,
+.bookmark:focus {
+  border: 3px solid #32425c;
+  color: #32425c;
+}
+
+.buy:active {
+  background-color: #518534;
+}
+
+.bookmark:active {
+  border: 3px solid #32425c;
+  opacity: 0.3;
+  color: rgba(50, 66, 92, 0.3);
+}
+
+.about-company {
+  font-size: 13px;
+  line-height: 24px;
+  text-align: left;
   color: #000000;
 }
 
-.about-company h2,
-.main-contacts h2 {
+.about-company h2 {
   font-size: 30px;
-  line-height: 30px; 
+  line-height: 30px;
   text-transform: uppercase;
 }
 
-.about-company p,
-.main-contacts p {
-  font-family: PTSans, Arial, sans-serif;
+.about-company p {
+  font-family: "PT Sans", Arial, sans-serif;
 }
 
 .about-company ul {
   font-size: 18px;
-  line-height: 20px; 
+  line-height: 20px;
 }
 
-.about-company-link,
-.main-contacts-write {
+.about-company-link {
   text-transform: uppercase;
   font-size: 14px;
-  line-height: 18px;
   text-align: center;
   color: #ffffff;
   background-color: #ee3643;
 }
 
-.main-footer,
-.footer-phone-number,
-.main-footer a {
+.about-company-link:hover,
+.about-company-link:focus {
+  background-color: #ca2c37;
+}
+
+.about-company-link:active {
+  background-color: #ba2732;
+}
+
+.main-contacts {
+  font-size: 13px;
+  line-height: 24px;
+  text-align: left;
+  color: #000000;
+}
+
+.main-contacts h2 {
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.main-contacts p {
+  font-family: "PT Sans", Arial, sans-serif;
+}
+
+.main-contacts-write {
+  text-transform: uppercase;
+  font-size: 14px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #ee3643;
+}
+
+.main-contacts-write:hover,
+.main-contacts-write:focus {
+  background-color: #ca2c37;
+}
+
+.main-contacts-write:active {
+  background-color: #ba2732;
+}
+
+.main-footer {
   font-size: 18px;
   line-height: 24px;
+  color: #f1f5f7;
+  background-color: #32425c;
+}
+
+.main-footer a {
+  font: inherit;
   color: #f1f5f7;
   background-color: #32425c;
 }
@@ -273,15 +368,15 @@ section.catalog {
 .footer-catalog-navigation a:focus {
   text-decoration: underline;
 }
- 
+
 
 .footer-navigation a:active {
-  opacity: 0.5;  
+  opacity: 0.5;
   color: rgba(241, 245, 247, 0.5);
 }
 
 .footer-catalog-navigation a:active {
-  opacity: 0.5; 
+  opacity: 0.5;
   color: rgba(255, 209, 128, 0.5);
 }
 
