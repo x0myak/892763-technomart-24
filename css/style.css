@@ -95,7 +95,7 @@ a {
   background-color: #161d29;
 }
 
-.catalog .header-navigation-basket.color-change {
+.color-change {
   background-color: #ee3643;
 }
 
@@ -221,7 +221,7 @@ section.catalog {
 
 .item-price-new {
   color: #ffffff;
-  background-color: red; /* временно */
+  background-color: #ee3643; /* временно */
 }
 
 .actions {
