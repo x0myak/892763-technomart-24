@@ -40,24 +40,43 @@ a {
   color: inherit;
 }
 
+.main-header .top-level {
+  background-color: #293449;
+}
+
 .technomart-logo {
   background-color: #ee3643;
 }
 
-.main-header .top-level {
-  background-color: #293449;
+.technomart-logo:hover,
+.technomart-logo:focus {
+  background-color: #ca2c37;
+}
+
+.technomart-logo:active {
+  background-color: #ba2732;
 }
 
 .search {
   background-color: transparent;
 }
 
+.search:hover,
+.search:focus {
+  background-color: #ffffff;
+}
+
 .header-navigation-order {
   background-color: #63a63e;
 }
 
-.technomart-logo:hover {
-  background-color: #ca2c37
+.header-navigation-order:hover,
+.header-navigation-order:focus {
+  background-color: #5fbb2d;
+}
+
+.header-navigation-order:active {
+  background-color: #518534;
 }
 
 .header-navigation-favourites:hover,
@@ -65,25 +84,9 @@ a {
   background-color: #212a3a;
 }
 
-.header-navigation-order:hover  {
-  background-color: #5fbb2d;
-}
-
-.technomart-logo:focus  {
-  background-color: #ca2c37;
-}
-
-.search:focus {
-  background-color: #ffffff;
-}
-
 .header-navigation-favourites:focus,
 .header-navigation-basket:focus {
   background-color: #212a3a;
-}
-
-.header-navigation-order:focus {
-  background-color: #5fbb2d;
 }
 
 .header-navigation-favourites:active,
@@ -92,18 +95,9 @@ a {
   background-color: #161d29;
 }
 
-.technomart-logo:active {
-  background-color: #ba2732;
-  }
-
-.header-navigation-order:active {
-  background-color: #518534;
-}
-
 .catalog .header-navigation-basket.color-change {
   background-color: #ee3643;
 }
-
 
 .middle-level {
   font-size: 21px;
@@ -168,12 +162,11 @@ a {
 .uppercase {
   text-transform: uppercase;
   font-family: "PT Sans", Arial, sans-serif;
-  font-size: 13px;
-  color: #000000;
 }
 
 .breadcrumbs a {
-  color: inherit;
+  font-size: 13px;
+  color: #000000;
 }
 
 .catalog-header {
@@ -183,31 +176,29 @@ a {
   background-color: #f2f6f8;
 }
 
-form fieldset {
+fieldset {
   border: none;
 }
 
-form.filter {
+.filters {
   font-size: 15px;
   line-height: 20px;
+  color: #000000;
 }
 
-form.filter legend {
+.filters legend {
   font-size: 17px;
   font-weight: 700;
   line-height: 30px;
 }
 
-input[type="checkbox"],
-input[type="radio"] {
-  display: none;
-}
-
-
-form.filter button {
+.filters button {
   text-transform: inherit;
   font-size: 13px;
+  line-height: 18px;
   text-align: center;
+  border: 1px solid #e5e5e5;
+  background-color: #ffffff;
 }
 
 section.catalog {
@@ -230,6 +221,7 @@ section.catalog {
 
 .item-price-new {
   color: #ffffff;
+  background-color: red; /* временно */
 }
 
 .actions {
@@ -238,12 +230,14 @@ section.catalog {
 }
 
 .buy {
+  display: none; /* временно */
   color: inherit;
   box-shadow: inset 0px -3px 0 0 #367315;
   background-color: #63a63e;
 }
 
 .bookmark {
+  display: none; /* временно */
   border: 3px solid #63a63e;
   color: #32425c;
 }

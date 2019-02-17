@@ -59,53 +59,49 @@
       </div>
     </header>
     <main>
-      <div class="uppercase">
-        <ul class="breadcrumbs">
+        <ul class="breadcrumbs uppercase">
           <li><a href="index.html">Главная</a></li>
           <li><a href="catalog.html">Каталог</a></li>
           <li><a href="instruments.html">Инструмент</a></li>
           <li class="breadcrumbs-current">Перфораторы</li>
         </ul>
-        <div>
-          <h1 class="catalog-header">Перфораторы</h1>
-        </div>
-        <section class="filter">
+        <h1 class="catalog-header uppercase">Перфораторы</h1>
+        <section class="filters">
           <h2>Фильтр:</h2>
-          <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+          <form class="filters uppercase" method="get" action="https://echo.htmlacademy.ru">
             <fieldset>
               <legend>Цена</legend>
-
             </fieldset>
             <fieldset>
               <legend>Производители:</legend>
                 <ul class="filter-producers">
                   <li class="filter-option">
                     <label>
-                      <input type="checkbox" name="Bosch" checked>
+                      <input class="visually-hidden" type="checkbox" name="Bosch" checked>
                       Bosch
                     </label>
                   </li>
                   <li class="filter-option">
                     <label>
-                      <input type="checkbox" name="Interskol">
+                      <input class="visually-hidden" type="checkbox" name="Interskol">
                       Интерскол
                     </label>
                   </li>
                   <li class="filter-option">
                     <label>
-                      <input type="checkbox" name="Makita" checked>
+                      <input class="visually-hidden" type="checkbox" name="Makita" checked>
                       Makita
                     </label>
                   </li>
                   <li class="filter-option">
                     <label>
-                      <input type="checkbox" name="Dewalt">
+                      <input class="visually-hidden" type="checkbox" name="Dewalt">
                       Dewalt
                     </label>
                   </li>
                   <li class="filter-option">
                     <label>
-                      <input type="checkbox" name="Hitachi">
+                      <input class="visually-hidden" type="checkbox" name="Hitachi">
                      Hitachi
                    </label>
                   </li>
@@ -116,24 +112,23 @@
               <ul class="filter-chargers">
                 <li class="filter-option">
                   <label>
-                    <input type="radio" name="charger-group" value="battery" checked>
+                    <input class="visually-hidden" type="radio" name="charger-group" value="battery" checked>
                     Аккумуляторные
                   </label>
                 </li>
                 <li class="filter-option">
                   <label>
-                    <input type="radio" name="charger-group" value="power">
+                    <input class="visually-hidden" type="radio" name="charger-group" value="power">
                     Сетевые
                   </label>
                 </li>
               </ul>
             </fieldset>
-            <button type="submit" class="filter-button button">
+            <button class="filter-button button" type="submit">
               Показать
             </button>
           </form>
         </section>
-      </div>
       <section class="catalog">
         <h2 class="visually-hidden">Список перфораторов</h2>
         <ul class="catalog-list">
@@ -151,8 +146,8 @@
               <b>13500 Р.</b>
             </div>
              <div class="actions">
-              <a href="#" class="buy">Купить</a>
-              <a href="#" class="bookmark">В закладки</a>
+              <a href="#" class="buy uppercase">Купить</a>
+              <a href="#" class="bookmark uppercase">В закладки</a>
             </div>
           </li>
           <li class="catalog-item">
