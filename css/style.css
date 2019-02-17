@@ -164,6 +164,7 @@ a {
   font-family: "PT Sans", Arial, sans-serif;
 }
 
+.breadcrumbs,
 .breadcrumbs a {
   font-size: 13px;
   color: #000000;
@@ -201,7 +202,7 @@ fieldset {
   background-color: #ffffff;
 }
 
-section.catalog {
+.catalog {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 17px;
   text-align: center;
