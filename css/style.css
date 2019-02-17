@@ -119,6 +119,7 @@ a {
 
 .user-block a {
   color: #000000;
+  background-color: #ffffff;
 }
 
 .user-block a:hover {
@@ -133,6 +134,10 @@ a {
   font-size: 16px;
   text-decoration: underline;
   color: #32425c;
+}
+
+.user-block-bottom a {
+  background-color: #f4f7f9;
 }
 
 .user-block-bottom a:hover,
@@ -205,7 +210,6 @@ fieldset {
 .catalog {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 17px;
-  text-align: center;
   font-weight: 700;
 }
 
