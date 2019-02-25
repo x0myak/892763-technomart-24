@@ -414,3 +414,69 @@ fieldset {
   display: none;
 }
 
+
+
+
+
+body {
+  min-width: 1200px;
+}
+
+.main-header {
+  margin-bottom: 59px;
+  border: 5px solid red;
+}
+
+.top-level {
+  border: 5px solid blue;
+   margin-bottom: 46px;
+}
+
+.header-navigation {
+  display: flex;
+  margin: 0 130px;
+  border: 5px solid yellow;
+
+}
+
+.technomart-logo {
+
+  width: 220px;
+  height: 47px;
+  border: 5px solid green;
+}
+
+.header-navigation-tools {
+  display: flex;
+  flex-basis: 100%;
+  align-items: center;
+  margin-left: 14px;
+  border: 5px solid pink;
+}
+
+.container-left {
+  flex-basis: 500px;
+  justify-content: space-between;
+  margin-left: 200px;
+
+  border: 5px solid red;
+}
+
+.site-navigation {
+  margin: 0px;
+  padding: 0px;
+}
+
+.bottom-level {
+  min-width: 940px;
+
+}
+
+.site-navigation {
+  display: flex;
+
+  justify-content: space-around;
+  padding-top: 22px;
+  padding-bottom: 26px;
+}
+
