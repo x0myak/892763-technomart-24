@@ -1,4 +1,5 @@
 body {
+  min-width: 1200px;
   margin: 0;
   padding: 0;
 
@@ -31,7 +32,13 @@ a {
   overflow: hidden;
 }
 
+.container {
+ width: 940px;
+ margin: 0 auto;
+}
+
 .main-header {
+  margin-bottom: 59px;
   font-size: 17px;
   background-color: #f4f7f9;
 }
@@ -40,12 +47,28 @@ a {
   color: inherit;
 }
 
-.main-header .top-level {
+.top-level {
+  min-height: 42px;
+  margin-bottom: 46px;
   background-color: #293449;
 }
 
+.container .header-navigation {
+  display: flex;
+}
+
+
 .technomart-logo {
+  width: 220px;
+  height: 47px;
+  box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
+
+}
+
+.technomart-logo img {
+  padding: 13px 54px 16px 55px;
   background-color: #ee3643;
+
 }
 
 .technomart-logo:hover,
@@ -65,6 +88,21 @@ a {
 .search:focus {
   background-color: #ffffff;
 }
+
+.search::before {
+  content: "";
+  position: relative;
+  margin-right: 15px;
+  background: url(../img/icon-search.svg);
+}
+
+.header-navigation-tools {
+  display: flex;
+  flex-basis: 100%;
+  align-items: center;
+  outline: 5px solid pink;
+}
+
 
 .header-navigation-order {
   background-color: #63a63e;
@@ -104,19 +142,41 @@ a {
   color: #ee3643;
 }
 
+.middle-level .container {
+  display: flex;
+}
+
 .middle-level h1 {
+  width: 196px;
+  margin-left: 53px;
   font-size: 16px;
   font-style: italic;
   line-height: 23px;
+  text-align: left;
+
 }
 
-.middle-level .address {
+.header-contacts .phone-number {
+  width: 270px;
+  height: 45px;
+  margin-left: 71px;
+  padding: 13px 52px 11px 74px;
+  position: center;
+}
+
+.header-contacts p {
+  width: 250px;
+  height: 13px;
+  margin-left: 81px;
   font-size: 14px;
   line-height: 24px;
   text-align: center;
   color: #32425c;
 }
 
+.user-block ul {
+  display: flex;
+}
 .user-block a {
   color: #000000;
   background-color: #ffffff;
@@ -128,6 +188,14 @@ a {
 
 .user-block a:focus {
   color: rgba(0, 0, 0, 0.3);
+}
+
+.user-block-login {
+  width: 121px;
+}
+
+.user-block-registration {
+  width: 150px;
 }
 
 .user-block-bottom {
@@ -151,6 +219,20 @@ a {
 
 .main-header .bottom-level {
   font-size: 17px;
+
+}
+
+.site-navigation {
+  display: flex;
+
+
+  margin: 0px;
+  padding: 0px;
+}
+
+.site-navigation a {
+  display: block;
+  padding: 22px 30px 26px;
   background-color: #32425c;
 }
 
@@ -418,65 +500,7 @@ fieldset {
 
 
 
-body {
-  min-width: 1200px;
-}
 
-.main-header {
-  margin-bottom: 59px;
-  border: 5px solid red;
-}
 
-.top-level {
-  border: 5px solid blue;
-   margin-bottom: 46px;
-}
 
-.header-navigation {
-  display: flex;
-  margin: 0 130px;
-  border: 5px solid yellow;
-
-}
-
-.technomart-logo {
-
-  width: 220px;
-  height: 47px;
-  border: 5px solid green;
-}
-
-.header-navigation-tools {
-  display: flex;
-  flex-basis: 100%;
-  align-items: center;
-  margin-left: 14px;
-  border: 5px solid pink;
-}
-
-.container-left {
-  flex-basis: 500px;
-  justify-content: space-between;
-  margin-left: 200px;
-
-  border: 5px solid red;
-}
-
-.site-navigation {
-  margin: 0px;
-  padding: 0px;
-}
-
-.bottom-level {
-  min-width: 940px;
-
-}
-
-.site-navigation {
-  display: flex;
-
-  justify-content: space-around;
-  padding-top: 22px;
-  padding-bottom: 26px;
-}
 
