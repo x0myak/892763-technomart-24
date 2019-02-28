@@ -18,7 +18,12 @@ a {
 }
 
  ul {
+  margin: 0;
   list-style: none;
+}
+
+p {
+  margin: 0;
 }
 
 .visually-hidden {
@@ -33,8 +38,12 @@ a {
 }
 
 .container {
+ display: flex; /*так можно?*/
  width: 940px;
+ align-items: center;
  margin: 0 auto;
+
+ outline: 5px solid red;  /* временно */
 }
 
 .main-header {
@@ -45,42 +54,44 @@ a {
 
 .main-header a {
   color: inherit;
+
+  outline: 3px solid black;  /* временно */
 }
 
 .top-level {
   min-height: 42px;
   margin-bottom: 46px;
   background-color: #293449;
+
+  outline: 3px solid yellow;  /* временно */
 }
 
 .container .header-navigation {
   display: flex;
 }
 
-
 .technomart-logo {
   width: 220px;
   height: 47px;
-  box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
-
+  box-shadow: 0px 5px 0 0  rgba(0, 0, 0, 0.24);
 }
 
 .technomart-logo img {
   padding: 13px 54px 16px 55px;
   background-color: #ee3643;
-
 }
 
-.technomart-logo:hover,
-.technomart-logo:focus {
+.technomart-logo img:hover,
+.technomart-logo img:focus {
   background-color: #ca2c37;
 }
 
-.technomart-logo:active {
+.technomart-logo img:active {
   background-color: #ba2732;
 }
 
 .search {
+  margin-left: 49px;
   background-color: transparent;
 }
 
@@ -96,13 +107,21 @@ a {
   background: url(../img/icon-search.svg);
 }
 
+.container-left {
+
+  width: 433px;
+  margin-left: auto;
+
+  outline: 5px solid green;
+}
+
 .header-navigation-tools {
   display: flex;
   flex-basis: 100%;
+
   align-items: center;
   outline: 5px solid pink;
 }
-
 
 .header-navigation-order {
   background-color: #63a63e;
@@ -147,31 +166,38 @@ a {
 }
 
 .middle-level h1 {
+  margin: 0;
+
   width: 196px;
+  margin-top: 40px;
   margin-left: 53px;
+
   font-size: 16px;
   font-style: italic;
   line-height: 23px;
   text-align: left;
+}
 
+.header-contacts {
+  width: 270px;
+  margin-left: 71px;
+  margin-right: 79px;
 }
 
 .header-contacts .phone-number {
-  width: 270px;
-  height: 45px;
-  margin-left: 71px;
+  display: block;
+  width: 144px;
   padding: 13px 52px 11px 74px;
-  position: center;
 }
 
-.header-contacts p {
-  width: 250px;
+.header-contacts .address {  /* не понимаю, как его выровнять по вышестоящему элементу*/
   height: 13px;
-  margin-left: 81px;
+
   font-size: 14px;
   line-height: 24px;
-  text-align: center;
   color: #32425c;
+
+  outline: 3px solid blue;
 }
 
 .user-block ul {
@@ -219,12 +245,10 @@ a {
 
 .main-header .bottom-level {
   font-size: 17px;
-
 }
 
 .site-navigation {
   display: flex;
-
 
   margin: 0px;
   padding: 0px;
@@ -450,7 +474,6 @@ fieldset {
 .footer-catalog-navigation a:focus {
   text-decoration: underline;
 }
-
 
 .footer-navigation a:active {
   opacity: 0.5;
