@@ -38,12 +38,8 @@ p {
 }
 
 .container {
- display: flex; /*так можно?*/
  width: 940px;
- align-items: center;
  margin: 0 auto;
-
- outline: 5px solid red;  /* временно */
 }
 
 .main-header {
@@ -54,26 +50,24 @@ p {
 
 .main-header a {
   color: inherit;
-
-  outline: 3px solid black;  /* временно */
 }
 
 .top-level {
-  min-height: 42px;
+  margin: 0;
+  padding: 0;
+
   margin-bottom: 46px;
   background-color: #293449;
-
-  outline: 3px solid yellow;  /* временно */
 }
 
-.container .header-navigation {
+.top-level .container {
   display: flex;
 }
 
 .technomart-logo {
   width: 220px;
   height: 47px;
-  box-shadow: 0px 5px 0 0  rgba(0, 0, 0, 0.24);
+  box-shadow: 0px 5px 0 0  #ba2732;
 }
 
 .technomart-logo img {
@@ -90,37 +84,49 @@ p {
   background-color: #ba2732;
 }
 
+.header-navigation-tools form {
+  width: 270px;
+  height: 42px;
+  box-sizing: border-box;
+}
+
 .search {
+  height: inherit;
+  position: relative;
   margin-left: 49px;
+  border: none;
   background-color: transparent;
+}
+
+.search::placeholder {
+  color: #ffffff;
 }
 
 .search:hover,
 .search:focus {
+  background-color: #212a3a;
+}
+
+.search:active {
   background-color: #ffffff;
 }
 
 .search::before {
   content: "";
-  position: relative;
+  position: absolute;
   margin-right: 15px;
   background: url(../img/icon-search.svg);
-}
-
-.container-left {
-
-  width: 433px;
-  margin-left: auto;
-
-  outline: 5px solid green;
 }
 
 .header-navigation-tools {
   display: flex;
   flex-basis: 100%;
+  height: 42px;
+}
 
-  align-items: center;
-  outline: 5px solid pink;
+.header-navigation-tools a {
+  width: 150px;
+  height: inherit;
 }
 
 .header-navigation-order {
@@ -169,16 +175,18 @@ p {
   margin: 0;
 
   width: 196px;
-  margin-top: 40px;
   margin-left: 53px;
 
   font-size: 16px;
   font-style: italic;
   line-height: 23px;
   text-align: left;
+  background-color: #f4f7f9;
 }
 
 .header-contacts {
+  margin: 0;
+
   width: 270px;
   margin-left: 71px;
   margin-right: 79px;
@@ -188,20 +196,28 @@ p {
   display: block;
   width: 144px;
   padding: 13px 52px 11px 74px;
+  border: solid 3px #ffffff;
 }
 
-.header-contacts .address {  /* не понимаю, как его выровнять по вышестоящему элементу*/
-  height: 13px;
-
+.header-contacts .address {
+  height: 20px;
   font-size: 14px;
   line-height: 24px;
   color: #32425c;
+  text-align: center;
 
   outline: 3px solid blue;
 }
 
+.user-block {
+  width: 281px;
+  margin-left: auto;
+}
+
 .user-block ul {
   display: flex;
+  height: 45px;
+  margin: 0;
 }
 .user-block a {
   color: #000000;
@@ -218,10 +234,14 @@ p {
 
 .user-block-login {
   width: 121px;
+
+  outline: 3px solid black;  /* временно */
 }
 
 .user-block-registration {
   width: 150px;
+
+  outline: 3px solid black;  /* временно */
 }
 
 .user-block-bottom {
@@ -249,9 +269,12 @@ p {
 
 .site-navigation {
   display: flex;
+  justify-content: space-between;
 
   margin: 0px;
   padding: 0px;
+  box-shadow: inset 0px -5px 0 0 #293449;
+  background-color: #32425c;
 }
 
 .site-navigation a {
