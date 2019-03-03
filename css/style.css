@@ -18,7 +18,6 @@ a {
 }
 
  ul {
-  margin: 0;
   list-style: none;
 }
 
@@ -102,12 +101,12 @@ p {
   color: #ffffff;
 }
 
-.search:hover,
-.search:focus {
+.search:hover {
   background-color: #212a3a;
 }
 
-.search:active {
+.search:active,
+.search:focus {
   background-color: #ffffff;
 }
 
@@ -164,6 +163,7 @@ p {
 
 .middle-level {
   font-size: 21px;
+  margin-bottom: 44px;
   color: #ee3643;
 }
 
@@ -174,8 +174,8 @@ p {
 .middle-level h1 {
   margin: 0;
 
-  width: 196px;
-  margin-left: 53px;
+  width: 205px;
+  padding-left: 53px;
 
   font-size: 16px;
   font-style: italic;
@@ -186,40 +186,37 @@ p {
 
 .header-contacts {
   margin: 0;
-
   width: 270px;
-  margin-left: 71px;
-  margin-right: 79px;
+  margin-left: auto;
 }
 
 .header-contacts .phone-number {
   display: block;
   width: 144px;
-  padding: 13px 52px 11px 74px;
+  min-height: 21px;
+  padding: 10px 49px 8px 71px;
   border: solid 3px #ffffff;
 }
 
 .header-contacts .address {
-  height: 20px;
+  padding: 0 10px;
   font-size: 14px;
   line-height: 24px;
   color: #32425c;
   text-align: center;
-
-  outline: 3px solid blue;
 }
 
 .user-block {
   display: flex;
   width: 281px;
-
-  outline: 2px solid green;
+  margin-left: auto;
 }
 
 .user-block ul {
   display: flex;
   justify-content: center;
-
+  padding: 0;
+  margin: 0;
 }
 
 .user-block a {
@@ -234,7 +231,7 @@ p {
   color: rgba(0, 0, 0, 0.3);
 }
 
-.user-block-login {   /*не понимаю, почему этот блок не прижимается влево?*/
+.user-block-login {
   width: 121px;
   height: 45px;
   background-color: #ffffff;
@@ -277,7 +274,6 @@ p {
 .site-navigation {
   display: flex;
   justify-content: space-between;
-
   margin: 0px;
   padding: 0px;
   box-shadow: inset 0px -5px 0 0 #293449;
@@ -286,7 +282,7 @@ p {
 
 .site-navigation a {
   display: block;
-  padding: 22px 30px 26px;
+  padding: 22px 31px 21px;
   background-color: #32425c;
 }
 
