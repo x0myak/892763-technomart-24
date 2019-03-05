@@ -230,14 +230,14 @@ p {
 }
 
 .user-block a:hover {
-  color: #ee3643;
+  color: #ee3643; 
 }
 
 .user-block a:focus {
   color: rgba(0, 0, 0, 0.3);
 }
 
-.user-block-login {
+.user-block-login a {
   width: 121px;
   height: 45px;
   padding-left: 48px; 
@@ -245,7 +245,7 @@ p {
   background-color: #ffffff;  
 }
 
-.user-block-registration {
+.user-block-registration a {
   width: 150px;
   height: 45px;
   padding-left: 25px;
@@ -409,15 +409,16 @@ fieldset {
   color: rgba(50, 66, 92, 0.3);
 }
 
-.container.main-bottom {
-  display: flex;
+.main-bottom .container {
+  display: flex; 
   margin-bottom: 86px;
+  justify-content: space-between;
 }
 
 .main-bottom a {
-  display: block;
-  height: 38px;
+  display: block;  
   padding-top: 14px;
+  padding-bottom: 12px;  
 }
 
 .about-company {
@@ -448,8 +449,7 @@ fieldset {
   line-height: 20px;
 }
 
-.about-company-link {
-  width: 220px;
+.main-bottom-link {  
   text-transform: uppercase;
   font-size: 14px;
   text-align: center;
@@ -457,18 +457,17 @@ fieldset {
   background-color: #ee3643;
 }
 
-.about-company-link:hover,
-.about-company-link:focus {
+.main-bottom-link:hover,
+.main-bottom-link:focus {
   background-color: #ca2c37;
 }
 
-.about-company-link:active {
+.main-bottom-link:active {
   background-color: #ba2732;
 }
 
 .main-contacts {
   width: 300px;
-  margin-left: 121px;
   font-size: 13px;
   line-height: 24px;
   text-align: left;
@@ -484,23 +483,6 @@ fieldset {
 .main-contacts p {
   width: 179px;  
   font-family: "PT Sans", Arial, sans-serif;
-}
-
-.main-contacts-write {
-  text-transform: uppercase;
-  font-size: 14px;
-  text-align: center;
-  color: #ffffff;
-  background-color: #ee3643;
-}
-
-.main-contacts-write:hover,
-.main-contacts-write:focus {
-  background-color: #ca2c37;
-}
-
-.main-contacts-write:active {
-  background-color: #ba2732;
 }
 
 .main-footer { 
