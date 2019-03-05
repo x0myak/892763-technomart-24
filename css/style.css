@@ -78,12 +78,12 @@ p {
   background-color: #ee3643;
 }*/
 
-.technomart-logo img:hover,
-.technomart-logo img:focus {
+.technomart-logo:hover,
+.technomart-logo:focus {
   background-color: #ca2c37;
 }
 
-.technomart-logo img:active {
+.technomart-logo:active {
   background-color: #ba2732;
 }
 
@@ -189,17 +189,17 @@ p {
 }
 
 .header-contacts {
-  margin: 0;
-  width: 270px;
+  margin: 0;  
   margin-left: auto;
 }
 
 .header-contacts .phone-number {
   display: block;
-  width: 144px;
+  width: 270px;
   min-height: 21px;
-  padding: 10px 49px 8px 71px;
+  padding: 10px 10px 10px 60px;
   border: solid 3px #ffffff;
+  box-sizing: border-box;
 }
 
 .header-contacts .address {
@@ -224,6 +224,8 @@ p {
 }
 
 .user-block a {  
+  display: block;
+  padding-top: 14px;  
   color: #000000;
 }
 
@@ -238,18 +240,18 @@ p {
 .user-block-login {
   width: 121px;
   height: 45px;
-  background-color: #ffffff;
-
-  outline: 3px solid black;  /* временно */
+  padding-left: 48px; 
+  box-sizing: border-box; 
+  background-color: #ffffff;  
 }
 
 .user-block-registration {
   width: 150px;
   height: 45px;
+  padding-left: 25px;
   margin-left: 10px;
+  box-sizing: border-box; 
   background-color: #ffffff;
-
-  outline: 3px solid black;  /* временно */
 }
 
 .user-block-bottom {
@@ -407,7 +409,21 @@ fieldset {
   color: rgba(50, 66, 92, 0.3);
 }
 
+.container.main-bottom {
+  display: flex;
+  margin-bottom: 86px;
+}
+
+.main-bottom a {
+  display: block;
+  height: 38px;
+  padding-top: 14px;
+}
+
 .about-company {
+  width: 519px;
+  min-height: 293px;
+
   font-size: 13px;
   line-height: 24px;
   text-align: left;
@@ -425,11 +441,15 @@ fieldset {
 }
 
 .about-company ul {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 53px;
   font-size: 18px;
   line-height: 20px;
 }
 
 .about-company-link {
+  width: 220px;
   text-transform: uppercase;
   font-size: 14px;
   text-align: center;
@@ -447,6 +467,8 @@ fieldset {
 }
 
 .main-contacts {
+  width: 300px;
+  margin-left: 121px;
   font-size: 13px;
   line-height: 24px;
   text-align: left;
@@ -460,6 +482,7 @@ fieldset {
 }
 
 .main-contacts p {
+  width: 179px;  
   font-family: "PT Sans", Arial, sans-serif;
 }
 
@@ -480,17 +503,44 @@ fieldset {
   background-color: #ba2732;
 }
 
-.main-footer {
+.main-footer { 
   font-size: 18px;
   line-height: 24px;
   color: #f1f5f7;
   background-color: #32425c;
 }
 
+.main-footer ul {
+  margin: 0;
+  padding: 0;
+}
+
 .main-footer a {
   font: inherit;
   color: #f1f5f7;
   background-color: #32425c;
+}
+
+.main-footer .container {
+  display: flex;
+  margin-bottom: 53px;  
+}
+
+.footer-contacts {
+  width: 322px;
+  margin-top: 32px;
+}
+
+.footer-navigation {  
+  padding-top: 42px;  
+}
+
+.footer-navigation ul {
+  display: flex;    
+}
+
+.footer-catalog-navigation ul {
+  display: flex;  
 }
 
 .footer-catalog-navigation a {
@@ -517,11 +567,32 @@ fieldset {
   color: rgba(255, 209, 128, 0.5);
 }
 
+.footer-bottom-level {
+  display: flex;  
+}
+
+.footer-bottom-level .container {
+  justify-content: space-between;
+  padding-top: 39px;
+}
+
 .footer-bottom-level,
 .footer-bottom-level a {
   font-size: 16px;
   line-height: 18px;
   background-color: #293449;
+}
+
+.footer-copyright {
+  width: 227px;
+}
+
+.footer-social {
+   margin-left: 162px;
+}
+
+.social {
+  display: flex; 
 }
 
 .social a {
@@ -532,6 +603,10 @@ fieldset {
 .social a:focus,
 .social a:active {
   background-color: #ee3643;
+}
+
+.footer-feedback {
+  display: flex;
 }
 
 .footer-feedback a {
@@ -545,6 +620,14 @@ fieldset {
 
 .footer-feedback a:active {
   color: #ee3643;
+}
+
+.feedback {
+  margin-left: 119px;
+}
+
+.developer {
+  margin-left: 53px;
 }
 
 .modal {
