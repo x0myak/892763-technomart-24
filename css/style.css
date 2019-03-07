@@ -18,6 +18,8 @@ a {
 }
 
  ul {
+  padding: 0;
+  margin: 0;
   list-style: none;
 }
 
@@ -63,7 +65,7 @@ p {
   display: flex;
 }
 
-.technomart-logo {  
+.technomart-logo {
   width: 220px;
   height: 42px;
   display: flex;
@@ -88,12 +90,12 @@ p {
 }
 
 .header-navigation-tools form {
-  width: 270px;  
-  box-sizing: border-box; 
+  width: 270px;
+  box-sizing: border-box;
 }
 
 .search {
-  height: 42px;  
+  height: 42px;
   position: relative;
   margin-left: 49px;
   border: none;
@@ -121,18 +123,18 @@ p {
 }
 
 .header-navigation-tools {
-  display: flex;    
+  display: flex;
 }
 
 .header-navigation-tools a {
-  width: 150px;  
+  width: 150px;
   padding-top: 14px;
   padding-bottom: 13px;
   text-align: center;
 }
 
 .header-navigation-order {
-  background-color: #63a63e;  
+  background-color: #63a63e;
 }
 
 .header-navigation-order:hover,
@@ -189,7 +191,7 @@ p {
 }
 
 .header-contacts {
-  margin: 0;  
+  margin: 0;
   margin-left: auto;
 }
 
@@ -223,14 +225,14 @@ p {
   margin: 0;
 }
 
-.user-block a {  
+.user-block a {
   display: block;
-  padding-top: 14px;  
+  padding-top: 14px;
   color: #000000;
 }
 
 .user-block a:hover {
-  color: #ee3643; 
+  color: #ee3643;
 }
 
 .user-block a:focus {
@@ -240,9 +242,9 @@ p {
 .user-block-login a {
   width: 121px;
   height: 45px;
-  padding-left: 48px; 
-  box-sizing: border-box; 
-  background-color: #ffffff;  
+  padding-left: 48px;
+  box-sizing: border-box;
+  background-color: #ffffff;
 }
 
 .user-block-registration a {
@@ -250,7 +252,7 @@ p {
   height: 45px;
   padding-left: 25px;
   margin-left: 10px;
-  box-sizing: border-box; 
+  box-sizing: border-box;
   background-color: #ffffff;
 }
 
@@ -410,21 +412,21 @@ fieldset {
 }
 
 .main-bottom .container {
-  display: flex; 
+  display: flex;
   margin-bottom: 86px;
   justify-content: space-between;
 }
 
 .main-bottom a {
-  display: block;  
-  padding-top: 14px;
-  padding-bottom: 12px;  
+  display: block;
+  min-height: 38px;
 }
 
 .about-company {
+  display: flex;
+  flex-direction: column;
   width: 519px;
-  min-height: 293px;
-
+  min-height: 368px;
   font-size: 13px;
   line-height: 24px;
   text-align: left;
@@ -432,6 +434,8 @@ fieldset {
 }
 
 .about-company h2 {
+  margin: 0;
+  padding: 0;
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
@@ -439,17 +443,23 @@ fieldset {
 
 .about-company p {
   font-family: "PT Sans", Arial, sans-serif;
+  margin-top: auto;
 }
 
 .about-company ul {
   padding: 0;
   margin: 0;
-  margin-bottom: 53px;
+  margin-top: auto;
+  margin-bottom: auto;
   font-size: 18px;
   line-height: 20px;
 }
 
-.main-bottom-link {  
+.about-company a {
+  width: 220px;
+}
+
+.main-bottom-link {
   text-transform: uppercase;
   font-size: 14px;
   text-align: center;
@@ -467,25 +477,31 @@ fieldset {
 }
 
 .main-contacts {
+  display: flex;
+  flex-direction: column;
   width: 300px;
+  min-height: 368px;
   font-size: 13px;
   line-height: 24px;
   text-align: left;
   color: #000000;
 }
-
 .main-contacts h2 {
+  padding: 0;
+  margin: 0;
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
 }
 
 .main-contacts p {
-  width: 179px;  
+  width: 179px;
+  margin-top: auto;
+  margin-bottom: auto;
   font-family: "PT Sans", Arial, sans-serif;
 }
 
-.main-footer { 
+.main-footer {
   font-size: 18px;
   line-height: 24px;
   color: #f1f5f7;
@@ -503,9 +519,13 @@ fieldset {
   background-color: #32425c;
 }
 
+.main-footer .technomart-logo {
+  background-color: #ee3643;
+}
+
 .main-footer .container {
   display: flex;
-  margin-bottom: 53px;  
+  margin-bottom: 53px;
 }
 
 .footer-contacts {
@@ -513,16 +533,16 @@ fieldset {
   margin-top: 32px;
 }
 
-.footer-navigation {  
-  padding-top: 42px;  
+.footer-navigation {
+  padding-top: 42px;
 }
 
 .footer-navigation ul {
-  display: flex;    
+  display: flex;
 }
 
 .footer-catalog-navigation ul {
-  display: flex;  
+  display: flex;
 }
 
 .footer-catalog-navigation a {
@@ -550,7 +570,7 @@ fieldset {
 }
 
 .footer-bottom-level {
-  display: flex;  
+  display: flex;
 }
 
 .footer-bottom-level .container {
@@ -574,7 +594,7 @@ fieldset {
 }
 
 .social {
-  display: flex; 
+  display: flex;
 }
 
 .social a {
