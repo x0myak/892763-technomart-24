@@ -53,7 +53,7 @@ p {
   color: inherit;
 }
 
-.top-level {
+.header-top-level {
   margin: 0;
   padding: 0;
 
@@ -61,7 +61,7 @@ p {
   background-color: #293449;
 }
 
-.top-level .container {
+.header-top-level .container {
   display: flex;
 }
 
@@ -74,11 +74,6 @@ p {
   align-items: center;
   box-shadow: 0px 5px 0 0  #ba2732;
 }
-
-/*.technomart-logo img {
-  padding: 13px 54px 16px 55px;
-  background-color: #ee3643;
-}*/
 
 .technomart-logo:hover,
 .technomart-logo:focus {
@@ -167,17 +162,17 @@ p {
   background-color: #ee3643;
 }
 
-.middle-level {
+.header-middle-level {
   font-size: 21px;
   margin-bottom: 44px;
   color: #ee3643;
 }
 
-.middle-level .container {
+.header-middle-level .container {
   display: flex;
 }
 
-.middle-level h1 {
+.header-middle-level h1 {
   margin: 0;
 
   width: 205px;
@@ -198,7 +193,6 @@ p {
 .header-contacts .phone-number {
   display: block;
   width: 270px;
-  min-height: 21px;
   padding: 10px 10px 10px 60px;
   border: solid 3px #ffffff;
   box-sizing: border-box;
@@ -276,7 +270,7 @@ p {
   color: rgba(50, 66, 92, 0.3);
 }
 
-.main-header .bottom-level {
+.header-bottom-level {
   font-size: 17px;
 }
 
@@ -419,7 +413,6 @@ fieldset {
 
 .main-bottom a {
   display: block;
-  min-height: 38px;
 }
 
 .about-company {
@@ -460,6 +453,7 @@ fieldset {
 }
 
 .main-bottom-link {
+  padding: 7px 0;
   text-transform: uppercase;
   font-size: 14px;
   text-align: center;
@@ -479,6 +473,7 @@ fieldset {
 .main-contacts {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   width: 300px;
   min-height: 368px;
   font-size: 13px;
@@ -496,8 +491,6 @@ fieldset {
 
 .main-contacts p {
   width: 179px;
-  margin-top: auto;
-  margin-bottom: auto;
   font-family: "PT Sans", Arial, sans-serif;
 }
 
@@ -525,6 +518,9 @@ fieldset {
 
 .main-footer .container {
   display: flex;
+}
+
+.footer-top-level {
   margin-bottom: 53px;
 }
 
@@ -534,15 +530,16 @@ fieldset {
 }
 
 .footer-navigation {
+  display: flex;
+  justify-content: space-between;
+  width: 547px;
   padding-top: 42px;
 }
 
-.footer-navigation ul {
+.footer-catalog-navigation {
   display: flex;
-}
-
-.footer-catalog-navigation ul {
-  display: flex;
+  justify-content: space-between;
+  width: 547px;
 }
 
 .footer-catalog-navigation a {
@@ -574,8 +571,8 @@ fieldset {
 }
 
 .footer-bottom-level .container {
-  justify-content: space-between;
   padding-top: 39px;
+  padding-bottom: 34px;
 }
 
 .footer-bottom-level,
@@ -586,10 +583,11 @@ fieldset {
 }
 
 .footer-copyright {
-  width: 227px;
+  min-width: 227px;
 }
 
 .footer-social {
+  width: 129px;
    margin-left: 162px;
 }
 
@@ -625,10 +623,12 @@ fieldset {
 }
 
 .feedback {
+  width: 135px;
   margin-left: 119px;
 }
 
 .developer {
+  width: 96px;
   margin-left: 53px;
 }
 
