@@ -128,6 +128,10 @@ p {
   text-align: center;
 }
 
+.header-navigation-favourites {
+  padding-right: 10px;
+}
+
 .header-navigation-order {
   background-color: #63a63e;
 }
@@ -520,26 +524,30 @@ fieldset {
   display: flex;
 }
 
-.footer-top-level {
-  margin-bottom: 53px;
-}
-
 .footer-contacts {
   width: 322px;
   margin-top: 32px;
 }
 
+.right-column {
+  width: 618px;
+}
+
 .footer-navigation {
   display: flex;
-  justify-content: space-between;
-  width: 547px;
-  padding-top: 42px;
+}
+
+.footer-navigation li {
+  padding: 37px 0 39px 60px;
 }
 
 .footer-catalog-navigation {
   display: flex;
-  justify-content: space-between;
-  width: 547px;
+  justify-content: flex-end;
+}
+
+.footer-catalog-navigation li {
+  padding: 0 0 69px 60px;
 }
 
 .footer-catalog-navigation a {
