@@ -604,13 +604,33 @@ fieldset {
 }
 
 .social a {
+  display: inline-block;
   background-color: #212a3a;
+  border-radius: 50%;
 }
 
 .social a:hover,
 .social a:focus,
 .social a:active {
   background-color: #ee3643;
+}
+
+.social-button {
+  width: 41px;
+  height: 42px;
+  margin-left: 3px;
+}
+
+.social-button-vk {
+  background: url("C:/Users/osero/Documents/GitHub/892763-technomart-24/img/vk-icon.svg") no-repeat 50% 50%;
+}
+
+.social-button-fb {
+  background: url("C:/Users/osero/Documents/GitHub/892763-technomart-24/img/fb-icon.svg") no-repeat 50% 50%;
+}
+
+.social-button-insta {
+  background: url("C:/Users/osero/Documents/GitHub/892763-technomart-24/img/insta-icon.svg") no-repeat 50% 50%;
 }
 
 .footer-feedback {
