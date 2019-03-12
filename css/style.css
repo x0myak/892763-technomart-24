@@ -119,17 +119,19 @@ p {
 
 .header-navigation-tools {
   display: flex;
+  align-items: flex-start;
 }
 
 .header-navigation-tools a {
   width: 150px;
-  padding-top: 14px;
-  padding-bottom: 13px;
+  padding: 14px 5px;
   text-align: center;
+  box-sizing: border-box;
 }
 
 .header-navigation-favourites {
-  padding-right: 10px;
+
+
 }
 
 .header-navigation-order {
@@ -409,10 +411,18 @@ fieldset {
   color: rgba(50, 66, 92, 0.3);
 }
 
+.main-bottom h2,
+.main-cbottom a,
+.main-bottom p,
+.main-bottom ul {
+  padding: 0;
+  margin: 0;
+}
+
 .main-bottom .container {
   display: flex;
   margin-bottom: 86px;
-  justify-content: space-between;
+  /*justify-content: space-between;*/
 }
 
 .main-bottom a {
@@ -424,6 +434,8 @@ fieldset {
   flex-direction: column;
   width: 519px;
   min-height: 368px;
+
+  margin-right: 121px;
   font-size: 13px;
   line-height: 24px;
   text-align: left;
@@ -431,8 +443,6 @@ fieldset {
 }
 
 .about-company h2 {
-  margin: 0;
-  padding: 0;
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
@@ -440,7 +450,7 @@ fieldset {
 
 .about-company p {
   font-family: "PT Sans", Arial, sans-serif;
-  margin-top: auto;
+  margin-top: 25px;
 }
 
 .about-company ul {
@@ -452,8 +462,23 @@ fieldset {
   line-height: 20px;
 }
 
+.about-company li::before {
+  content: "";
+  display: inline-block;
+  width: 25px;
+  height: 2px;
+  margin-right: 5px;
+  vertical-align: middle;
+  background: #ee3643;
+}
+
+.about-company li {
+  margin-bottom: 15px;
+}
+
 .about-company a {
   width: 220px;
+  margin-top: auto;
 }
 
 .main-bottom-link {
@@ -477,7 +502,6 @@ fieldset {
 .main-contacts {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   width: 300px;
   min-height: 368px;
   font-size: 13px;
@@ -485,9 +509,8 @@ fieldset {
   text-align: left;
   color: #000000;
 }
+
 .main-contacts h2 {
-  padding: 0;
-  margin: 0;
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
@@ -495,7 +518,13 @@ fieldset {
 
 .main-contacts p {
   width: 179px;
+  margin: 25px 0;
   font-family: "PT Sans", Arial, sans-serif;
+}
+
+.main-contacts a {
+  margin-bottom: 40px;
+  margin-top: auto;
 }
 
 .main-footer {
@@ -505,7 +534,10 @@ fieldset {
   background-color: #32425c;
 }
 
-.main-footer ul {
+.main-footer ul,
+.main-footer a,
+.main-footer h2,
+.main-footer p {
   margin: 0;
   padding: 0;
 }
@@ -517,7 +549,17 @@ fieldset {
 }
 
 .main-footer .technomart-logo {
+  height: 63px;
   background-color: #ee3643;
+}
+
+.main-footer .technomart-logo:hover,
+.main-footer .technomart-logo:focus {
+  background-color: #ca2c37;
+}
+
+.main-footer .technomart-logo:active {
+  background-color: #ba2732;
 }
 
 .main-footer .container {
@@ -525,8 +567,8 @@ fieldset {
 }
 
 .footer-contacts {
-  width: 322px;
-  margin-top: 32px;
+  width: 330px;
+  margin-top: 33px;
 }
 
 .right-column {
@@ -538,7 +580,7 @@ fieldset {
 }
 
 .footer-navigation li {
-  padding: 37px 0 39px 60px;
+  padding: 35px 0 39px 60px;
 }
 
 .footer-catalog-navigation {
@@ -591,16 +633,21 @@ fieldset {
 }
 
 .footer-copyright {
-  min-width: 227px;
+  width: 227px;
+}
+
+.footer-copyright::before {
+  content: "@";
 }
 
 .footer-social {
   width: 129px;
-   margin-left: 162px;
+  margin-left: 162px;
 }
 
 .social {
   display: flex;
+  justify-content: space-between;
 }
 
 .social a {
@@ -622,15 +669,15 @@ fieldset {
 }
 
 .social-button-vk {
-  background: url("C:/Users/osero/Documents/GitHub/892763-technomart-24/img/vk-icon.svg") no-repeat 50% 50%;
+  background: url(../img/vk-icon.svg) no-repeat 50% 50%;
 }
 
 .social-button-fb {
-  background: url("C:/Users/osero/Documents/GitHub/892763-technomart-24/img/fb-icon.svg") no-repeat 50% 50%;
+  background: url(../img/fb-icon.svg) no-repeat 50% 50%;
 }
 
 .social-button-insta {
-  background: url("C:/Users/osero/Documents/GitHub/892763-technomart-24/img/insta-icon.svg") no-repeat 50% 50%;
+  background: url(../img/insta-icon.svg) no-repeat 50% 50%;
 }
 
 .footer-feedback {
