@@ -127,11 +127,7 @@ p {
   padding: 14px 5px;
   text-align: center;
   box-sizing: border-box;
-}
-
-.header-navigation-favourites {
-
-
+  word-wrap: break-word;
 }
 
 .header-navigation-order {
@@ -205,6 +201,7 @@ p {
 }
 
 .header-contacts .address {
+  width: 270px;
   padding: 0 10px;
   font-size: 14px;
   line-height: 24px;
@@ -241,15 +238,17 @@ p {
 
 .user-block-login a {
   width: 121px;
-  height: 45px;
+  min-height: 45px;
+  padding: 14px;  
   padding-left: 48px;
   box-sizing: border-box;
   background-color: #ffffff;
 }
 
 .user-block-registration a {
-  width: 150px;
-  height: 45px;
+  width: 150px;  
+  min-height: 45px;
+  padding: 14px; 
   padding-left: 25px;
   margin-left: 10px;
   box-sizing: border-box;
