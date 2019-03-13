@@ -428,6 +428,13 @@ fieldset {
   display: block;
 }
 
+.main-bottom h2 {
+  /*margin-top: 20px;*/
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
 .about-company {
   display: flex;
   flex-direction: column;
@@ -441,12 +448,6 @@ fieldset {
   color: #000000;
 }
 
-.about-company h2 {
-  font-size: 30px;
-  line-height: 30px;
-  text-transform: uppercase;
-}
-
 .about-company p {
   font-family: "PT Sans", Arial, sans-serif;
   margin-top: 25px;
@@ -455,8 +456,7 @@ fieldset {
 .about-company ul {
   padding: 0;
   margin: 0;
-  margin-top: auto;
-  margin-bottom: auto;
+  margin-top: 19px; 
   font-size: 18px;
   line-height: 20px;
 }
@@ -466,13 +466,13 @@ fieldset {
   display: inline-block;
   width: 25px;
   height: 2px;
-  margin-right: 5px;
+  margin-right: 10px;
   vertical-align: middle;
   background: #ee3643;
 }
 
 .about-company li {
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 .about-company a {
@@ -480,8 +480,12 @@ fieldset {
   margin-top: auto;
 }
 
+.main-contacts-map {
+  margin-bottom: 36px;
+}
+
 .main-bottom-link {
-  padding: 7px;
+  padding: 7px 0;  
   text-transform: uppercase;
   font-size: 14px;
   text-align: center;
@@ -509,20 +513,13 @@ fieldset {
   color: #000000;
 }
 
-.main-contacts h2 {
-  font-size: 30px;
-  line-height: 30px;
-  text-transform: uppercase;
-}
-
 .main-contacts p {
   width: 179px;
   margin: 25px 0;
   font-family: "PT Sans", Arial, sans-serif;
 }
 
-.main-contacts a {
-  margin-bottom: 40px;
+.main-contacts a {  
   margin-top: auto;
 }
 
@@ -586,6 +583,10 @@ fieldset {
   padding-top: 35px;
   padding-bottom: 39px; 
   word-wrap: break-word;    
+}
+
+.footer-navigation li:first-child {
+  margin-left: 41px;
 }
 
 .footer-catalog-navigation {
