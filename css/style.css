@@ -223,8 +223,7 @@ p {
 }
 
 .user-block a {
-  display: block;
-  padding-top: 14px;
+  display: block;  
   color: #000000;
 }
 
@@ -538,9 +537,8 @@ fieldset {
   padding: 0;
 }
 
-.main-footer a {
-  font: inherit;
-  color: #f1f5f7;
+.main-footer a {  
+  color: inherit;
   background-color: #32425c;
 }
 
@@ -592,8 +590,7 @@ fieldset {
 .footer-catalog-navigation {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;  
-  padding-left: auto;
+  flex-wrap: wrap;   
 }
 
 .footer-catalog-navigation a {
@@ -643,10 +640,6 @@ fieldset {
 
 .footer-copyright {
   width: 227px;
-}
-
-.footer-copyright::before {
-  content: "@";
 }
 
 .footer-social {
