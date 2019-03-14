@@ -560,12 +560,26 @@ fieldset {
   margin-top: auto;
 }
 
-.pagination {
-  margin-bottom: 127px;
+.inner-main-bottom {
+  padding-top: 67px;
+  padding-bottom: 73px;
+  color: #000000;
+  background-color: #f4f7f9;
 }
 
-.about-drills {
-  margin-bottom: 73px;
+.about-drills h2 {
+  text-transform: uppercase;
+}
+
+.about-drills p {
+  font-size: 13px;
+  line-height: 24px;
+  font-family: "PT Sans", Arial, sans-serif;
+}
+
+.pagination {
+  margin-top: 52px;
+  margin-bottom: 60px;
 }
 
 .main-footer {
