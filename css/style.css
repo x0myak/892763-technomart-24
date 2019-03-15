@@ -47,6 +47,15 @@ p {
   padding-bottom: 59px;
   font-size: 17px;
   background-color: #f4f7f9;
+  margin-bottom: 25px;
+}
+
+.catalog-header {
+  font-size: 30px;
+  line-height: 30px;
+  color: #32425c;
+  background-color: #f2f6f8;
+
 }
 
 .main-header a {
@@ -353,17 +362,29 @@ p {
   font-family: "PT Sans", Arial, sans-serif;
 }
 
+.inner-container {
+  width: 700px;
+}
+
 .breadcrumbs,
 .breadcrumbs a {
   font-size: 13px;
   color: #000000;
 }
 
-.catalog-header {
-  font-size: 30px;
-  line-height: 30px;
-  color: #32425c;
-  background-color: #f2f6f8;
+.breadcrumbs {
+  display: flex;
+  margin-bottom: 25px;
+}
+
+.inner-page h1 {
+  padding: 29px 30px 31px 30px;
+  margin: 0;
+  font-family: "Cuprum", Arial, sans-serif;
+}
+
+.catalog-columns {
+  display: flex;
 }
 
 fieldset {
@@ -574,6 +595,8 @@ fieldset {
 }
 
 .about-drills h2 {
+  margin: 0;
+  margin-bottom: 31px;
   text-transform: uppercase;
 }
 
@@ -583,10 +606,24 @@ fieldset {
   font-family: "PT Sans", Arial, sans-serif;
 }
 
-.pagination {
+.pagination {   
   margin-top: 52px;
   margin-bottom: 60px;
 }
+
+.pagination a {
+  display: inline-block;
+  min-width: 38px;
+  padding: 9px 15px 9px 14px;
+  margin-right: 10px;
+  font-size: 13px;
+  line-height: 18px;
+  color: #000000;
+  box-sizing: border-box;
+
+  border: solid 1px #e5e5e5;
+}
+
 
 .main-footer {
   font-size: 18px;
