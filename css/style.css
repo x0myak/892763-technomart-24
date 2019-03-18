@@ -55,7 +55,6 @@ p {
   line-height: 30px;
   color: #32425c;
   background-color: #f2f6f8;
-
 }
 
 .main-header a {
@@ -496,6 +495,19 @@ fieldset {
   border: 3px solid #32425c;
   opacity: 0.3;
   color: rgba(50, 66, 92, 0.3);
+}
+
+.popular-producers h2,
+.popular-goods h2 {  
+  font-size: 30px;
+  line-height: 30px;
+  color: #32425c;
+  background-color: #f2f6f8;
+}
+
+.popular-producers-list {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .main-bottom h2,
