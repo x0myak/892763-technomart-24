@@ -199,7 +199,7 @@ p {
 
 .header-contacts {
   margin: 0;
-  margin-left: auto;
+  margin: 0 auto;
 }
 
 .header-contacts .phone-number {
@@ -227,59 +227,37 @@ p {
 }
 
 .user-block-catalog {
-  width: 299px;
-  margin-left: 51px;  
+  width: 299px;   
 }
 
-.block-1 {
-  width: 230px;
-  padding: 13px 0 11px;
-  margin-bottom: 10px;
-  line-height: 21px;
-  text-align: right; 
-  background-color: #ffffff;
+.user-block-catalog a {
+  display: block;
 }
 
-.block-2 {
-  width: 69px;
-  background-color: #ffffff;
-
-  outline: 2px solid blue;
-}
-
-.user-block ul {
+.user-block-top {
   display: flex;
   justify-content: space-between;
   padding: 0;
-  margin: 0;
+  margin: 0;  
+  background-color: #ffffff;
 }
 
-.user-block-top-profile {
-  
+.user-block-top-profile {  
   width: 230px;
-  padding: 13px 0 11px;
-  margin-bottom: 10px;
+  padding: 13px 0 11px;  
   line-height: 21px;
   text-align: right; 
   background-color: #ffffff;    
 }
 
-.user-block a {
-    
+.user-block a {    
   color: #000000;
 }
 
- .inner-page .user-block a {
-  display: initial;
-}
-
 .user-block-top-exit {
-  display: flex;
-  background: url(../img/icon-logout.svg) no-repeat center;  
-  width: 30px;
-  height: 42px;
-
-  outline: 2px solid red;
+  width: 60px;
+  height: 42px; 
+  background: url(../img/icon-logout.svg) no-repeat center;    
 }
 
 .user-block-top-profile:hover {
@@ -291,25 +269,27 @@ p {
 }
 
 .user-block-login {
+  display: block;
   width: 121px;
   min-height: 45px;
-  padding: 14px;
-  padding-left: 48px;
-  margin-left: 17px;
+  padding: 14px 0 14px 47px;  
   box-sizing: border-box;
   background-color: #ffffff;
 }
 
 .user-block-registration {
+  display: block;
   width: 150px;
   min-height: 45px;
   padding: 14px 0 14px 15px;
   margin-left: 10px;
   box-sizing: border-box;
-  background-color: #ffffff;
+  text-align: center;  
 }
 
 .user-block-bottom {
+  display: flex;
+  position: relative; 
   width: 210px;
   font-size: 16px;
   text-decoration: underline;
@@ -317,24 +297,30 @@ p {
 }
 
 .user-block-bottom a {
+  display: block;
+  padding-left: 15px;
   background-color: #f4f7f9;
 }
 
 .user-block-bottom a:hover,
-.user-block-bottom a:focus {
+.user-block-bottom a:focus,
+.user-block a:hover,
+.user-block a:focus {
   color: #ee3643;
 }
 
-.user-block-bottom a:active {
+.user-block-bottom a:active,
+.user-block a:active {
   opacity: 0.3;
   color: rgba(50, 66, 92, 0.3);
 }
 
 .user-block-bottom-profile::before {
   content: "";
-  display: inline-block;
+  position: absolute;
+  top: 5px;  
   width: 4px;
-  height: 5px;
+  height: 5px;  
   background-color: #32425c;  
   border-radius: 50%;
 }
@@ -400,18 +386,6 @@ p {
   display: flex;  
 }
 
-.catalog-list {
-  justify-content: space-between;
-}
-
-.catalog-item {
-  display: flex;
-  flex-direction: column;
-  width: 218px;
-  border: solid 1px #e5e5e5;
-  margin-bottom: 21px;
-}
-
 fieldset {
   border: none;
 }
@@ -450,16 +424,30 @@ fieldset {
 
 .catalog-list {
   display: flex;
-  flex-wrap: wrap;  
+  flex-wrap: wrap; 
+  justify-content: space-between; 
+}
+
+.catalog-item {
+  display: flex;
+  flex-direction: column;
+  width: 218px;
+  border: solid 1px #e5e5e5;
+  margin-bottom: 21px;  
+  align-items: center;
 }
 
 .catalog-item-title {
+  margin: 0 34px 0 33px;
+  padding-bottom: 18px;
+  text-align: center;
   font-size: 18px;
   line-height: 20px;
   color: #000000;
 }
 
 .item-price-old {
+  padding-bottom: 13px;
   text-decoration: line-through;
   color: #999999;
 }
@@ -467,6 +455,7 @@ fieldset {
 .item-price-new {
   color: #ffffff;
   background-color: #ee3643; /* временно */
+  padding-bottom: 21px;
 }
 
 .actions {
