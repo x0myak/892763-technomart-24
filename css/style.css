@@ -186,11 +186,12 @@ p {
 .header-middle-level h1 {
   margin: 0;
 
-  width: 205px;
+  width: 196px;
   padding-left: 53px;
 
   font-size: 16px;
   font-style: italic;
+  font-weight: 400;
   line-height: 23px;
   text-align: left;
   background-color: #f4f7f9;
@@ -226,7 +227,7 @@ p {
 }
 
 .user-block-catalog {
-  width: 299px;   
+  width: 299px;
 }
 
 .user-block-catalog a {
@@ -237,26 +238,33 @@ p {
   display: flex;
   justify-content: space-between;
   padding: 0;
-  margin: 0;  
+  margin: 0;
   background-color: #ffffff;
 }
 
-.user-block-top-profile {  
+.main-header .user-block-top-profile {
   width: 230px;
-  padding: 13px 0 11px;  
+  padding: 13px 0 11px;
   line-height: 21px;
-  text-align: right; 
-  background-color: #ffffff;    
+  text-align: right;
+  color: #000000;
+  background-color: #ffffff;
 }
 
-.user-block a {    
+.user-block-list a {
   color: #000000;
+}
+
+.user-block-list {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
 }
 
 .user-block-top-exit {
   width: 60px;
-  height: 42px; 
-  background: url(../img/icon-logout.svg) no-repeat center;    
+  height: 42px;
+  background: url(../img/icon-logout.svg) no-repeat center;
 }
 
 .user-block-top-profile:hover {
@@ -271,7 +279,7 @@ p {
   display: block;
   width: 121px;
   min-height: 45px;
-  padding: 14px 0 14px 47px;  
+  padding: 14px 0 14px 47px;
   box-sizing: border-box;
   background-color: #ffffff;
 }
@@ -283,12 +291,13 @@ p {
   padding: 14px 0 14px 15px;
   margin-left: 10px;
   box-sizing: border-box;
-  text-align: center;  
+  text-align: center;
+  background-color: #ffffff;
 }
 
 .user-block-bottom {
   display: flex;
-  position: relative; 
+  position: relative;
   width: 210px;
   font-size: 16px;
   text-decoration: underline;
@@ -303,13 +312,13 @@ p {
 
 .user-block-bottom a:hover,
 .user-block-bottom a:focus,
-.user-block a:hover,
-.user-block a:focus {
+.user-block-list a:hover,
+.user-block-list a:focus {
   color: #ee3643;
 }
 
 .user-block-bottom a:active,
-.user-block a:active {
+.user-block-list a:active {
   opacity: 0.3;
   color: rgba(50, 66, 92, 0.3);
 }
@@ -317,10 +326,10 @@ p {
 .user-block-bottom-profile::before {
   content: "";
   position: absolute;
-  top: 5px;  
+  top: 5px;
   width: 4px;
-  height: 5px;  
-  background-color: #32425c;  
+  height: 5px;
+  background-color: #32425c;
   border-radius: 50%;
 }
 
@@ -375,14 +384,23 @@ p {
   margin-bottom: 25px;
 }
 
-.inner-page h1 {
+.breadcrumbs a {
+   position: relative;
+}
+
+.breadcrumbs a::after {
+  content: "";
+  position: absolute;
+}
+
+.inner-page catalog-header {
   padding: 29px 30px 31px 30px;
   margin: 0;
   font-family: "Cuprum", Arial, sans-serif;
 }
 
 .catalog-columns {
-  display: flex;  
+  display: flex;
 }
 
 fieldset {
@@ -423,8 +441,8 @@ fieldset {
 
 .catalog-list {
   display: flex;
-  flex-wrap: wrap; 
-  justify-content: space-between; 
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .catalog-item {
@@ -432,8 +450,16 @@ fieldset {
   flex-direction: column;
   width: 218px;
   border: solid 1px #e5e5e5;
-  margin-bottom: 21px;  
+  padding-bottom: 21px;
   align-items: center;
+}
+
+.catalog-item a {
+  margin-bottom: auto;
+}
+
+.catalog-item img {
+  margin-bottom: 12px;
 }
 
 .catalog-item-title {
@@ -445,6 +471,12 @@ fieldset {
   color: #000000;
 }
 
+.item-price {
+  font-size: 17px;
+  line-height: 18px;
+  font-family: "PT Sans", Arial, sans-serif;
+}
+
 .item-price-old {
   padding-bottom: 13px;
   text-decoration: line-through;
@@ -453,8 +485,8 @@ fieldset {
 
 .item-price-new {
   color: #ffffff;
-  background-color: #ee3643; /* временно */
-  padding-bottom: 21px;
+  background: url(../img/btn-copy-14.svg) center no-repeat;
+
 }
 
 .actions {
@@ -498,16 +530,28 @@ fieldset {
 }
 
 .popular-producers h2,
-.popular-goods h2 {  
+.popular-goods h2 {
   font-size: 30px;
   line-height: 30px;
   color: #32425c;
-  background-color: #f2f6f8;
+  background-color: #f9f5f0;
 }
 
 .popular-producers-list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 65px;
+}
+
+.popular-producer-item{
+  width: 220px;
+  height: 145px;
+  padding-top: 34px;
+  margin-bottom: 20px;
+  border: solid 1px #eaeaea;
+  box-sizing: border-box;
+  text-align: center;
 }
 
 .main-bottom h2,
@@ -642,7 +686,7 @@ fieldset {
   font-family: "PT Sans", Arial, sans-serif;
 }
 
-.pagination {   
+.pagination {
   margin-top: 31px;
   margin-bottom: 60px;
 }
