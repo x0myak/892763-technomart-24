@@ -220,11 +220,15 @@ p {
   box-sizing: border-box;
 }
 
-.user-block-catalog {
+.user-block {
   display: flex;
+  width: 281px;
+  margin-left: auto;
+}
+
+.user-block-catalog {
   width: 299px;
-  margin-left: 51px;
-  flex-wrap: wrap;
+  margin-left: 51px;  
 }
 
 .block-1 {
@@ -243,11 +247,6 @@ p {
   outline: 2px solid blue;
 }
 
-.user-block-top-profile {
-  display: block;
-  width: 183px;     
-}
-
 .user-block ul {
   display: flex;
   justify-content: space-between;
@@ -255,8 +254,18 @@ p {
   margin: 0;
 }
 
+.user-block-top-profile {
+  
+  width: 230px;
+  padding: 13px 0 11px;
+  margin-bottom: 10px;
+  line-height: 21px;
+  text-align: right; 
+  background-color: #ffffff;    
+}
+
 .user-block a {
-  display: block;
+    
   color: #000000;
 }
 
@@ -265,7 +274,10 @@ p {
 }
 
 .user-block-top-exit {
-  background: url(../img/icon-logout.svg) no-repeat;  
+  display: flex;
+  background: url(../img/icon-logout.svg) no-repeat center;  
+  width: 30px;
+  height: 42px;
 
   outline: 2px solid red;
 }
@@ -278,7 +290,7 @@ p {
   color: rgba(0, 0, 0, 0.3);
 }
 
-.user-block-login a {
+.user-block-login {
   width: 121px;
   min-height: 45px;
   padding: 14px;
@@ -288,10 +300,10 @@ p {
   background-color: #ffffff;
 }
 
-.user-block-registration a {
+.user-block-registration {
   width: 150px;
   min-height: 45px;
-  padding: 14px 0 14px 25px;
+  padding: 14px 0 14px 15px;
   margin-left: 10px;
   box-sizing: border-box;
   background-color: #ffffff;
