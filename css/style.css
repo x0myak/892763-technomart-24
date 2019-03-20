@@ -199,7 +199,7 @@ p {
 
 .header-contacts {
   margin: 0;
-  margin: 0 auto;
+  margin: auto auto auto 71px;
 }
 
 .header-contacts .phone-number {
@@ -368,7 +368,7 @@ p {
   font-family: "PT Sans", Arial, sans-serif;
 }
 
-.inner-container {
+.catalog {
   width: 700px;
   margin-left: 21px;
 }
@@ -393,14 +393,18 @@ p {
   position: absolute;
 }
 
-.inner-page catalog-header {
+.inner-page .catalog-header {
   padding: 29px 30px 31px 30px;
   margin: 0;
+  margin-bottom: 54px;
+  font-size: 30px;
+  font-weight: normal;
   font-family: "Cuprum", Arial, sans-serif;
 }
 
 .catalog-columns {
   display: flex;
+  justify-content: space-between;
 }
 
 fieldset {
@@ -451,6 +455,7 @@ fieldset {
   width: 218px;
   border: solid 1px #e5e5e5;
   padding-bottom: 21px;
+  margin-bottom: 21px;
   align-items: center;
 }
 
@@ -486,7 +491,6 @@ fieldset {
 .item-price-new {
   color: #ffffff;
   background: url(../img/btn-copy-14.svg) center no-repeat;
-
 }
 
 .actions {
@@ -531,6 +535,7 @@ fieldset {
 
 .popular-producers h2,
 .popular-goods h2 {
+  padding: 33px 0 35px 30px;
   font-size: 30px;
   line-height: 30px;
   color: #32425c;
@@ -667,7 +672,7 @@ fieldset {
   margin-top: auto;
 }
 
-.inner-main-bottom {
+.inner-main-bottom {  
   padding-top: 67px;
   padding-bottom: 73px;
   color: #000000;
@@ -686,9 +691,10 @@ fieldset {
   font-family: "PT Sans", Arial, sans-serif;
 }
 
-.pagination {
+.pagination { 
   margin-top: 31px;
   margin-bottom: 60px;
+  margin-left: 240px;
 }
 
 .pagination a {
@@ -894,6 +900,12 @@ fieldset {
 
 .modal {
   display: none;
+}
+
+.modal-feedback {  
+  width: 620px;
+  height: 430px;
+  box-shadow: 0px 20px 40px 0 rgba(0, 0, 0, 0.75);
 }
 
 
