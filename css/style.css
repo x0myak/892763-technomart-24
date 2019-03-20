@@ -264,7 +264,7 @@ p {
 .user-block-top-exit {
   width: 60px;
   height: 42px;
-  background: url(../img/icon-logout.svg) no-repeat center;
+  background: url(../img/icon-logout.svg) no-repeat center;     
 }
 
 .user-block-top-profile:hover {
@@ -452,11 +452,29 @@ fieldset {
 .catalog-item {
   display: flex;
   flex-direction: column;
+  position: relative;
   width: 218px;
   border: solid 1px #e5e5e5;
   padding-bottom: 21px;
   margin-bottom: 21px;
   align-items: center;
+}
+
+.catalog-item .flag {
+  position: absolute;
+  top: -1px;
+  right: -1px;
+  
+  width: 60px;
+  height: 60px;
+  
+  text-indent: -1000px;
+  overflow: hidden;
+  z-index: 20;
+}
+
+.catalog-item .flag-new {
+  background: url(../img/new-flag.jpg) no-repeat 0 0;
 }
 
 .catalog-item a {
@@ -489,26 +507,70 @@ fieldset {
 }
 
 .item-price-new {
-  color: #ffffff;
+  position: relative;
+  width: 80px;
+  margin: 10px auto;
+  margin-bottom: 20px;
+  padding: 10px 30px;
+
+  color: white;
+  background: #ee3643;
+  border-radius: 3px;
   background: url(../img/btn-copy-14.svg) center no-repeat;
 }
 
-.actions {
+.catalog-item .actions {
+  position: absolute;
+  top: 0;
+  left: 0;
+  
+  width: 218px;
+  height: 88px;
+  padding: 40px 0;
+  
+  background-color: rgba(255,255,255,0.9);
+  z-index: 10;
   font-size: 14px;
   line-height: 18px;
 }
 
-.buy {
-  display: none; /* временно */
-  color: inherit;
-  box-shadow: inset 0px -3px 0 0 #367315;
-  background-color: #63a63e;
+.buy {  
+  color: inherit;  
 }
 
 .bookmark {
-  display: none; /* временно */
-  border: 3px solid #63a63e;
   color: #32425c;
+  background: white;  
+}
+
+.catalog-item .actions .buy,
+.catalog-item .actions .bookmark {
+  display: block;
+  width: 129px;
+  margin: 0 auto;
+  margin-bottom: 7px;
+  padding: 7px 0;
+  
+  background-color: #63a63e;
+  border: 3px solid #63a63e;
+  border-bottom-color: #367315;
+  border-radius:3px;
+  
+  color: white;
+  font-size: 14px;
+  font-weight: normal;
+  font-family: "Cuprum", sans-serif;
+  line-height: 18px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.catalog-item .actions {
+  display: none;
+}
+
+.catalog-item:hover .actions {
+  display: block;
 }
 
 .buy:hover,
