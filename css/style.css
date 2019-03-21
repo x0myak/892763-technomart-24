@@ -661,18 +661,19 @@ legend {
 .popular-producers-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-between;  
   margin-bottom: 65px;
 }
 
 .popular-producer-item{
+  display: flex;
   width: 220px;
-  height: 145px;
-  padding-top: 34px;
+  height: 145px;  
   margin-bottom: 20px;
   border: solid 1px #eaeaea;
   box-sizing: border-box;
-  text-align: center;
+  align-items: center;
+  justify-content: center;  
 }
 
 .main-bottom h2,
@@ -685,8 +686,7 @@ legend {
 
 .main-bottom .container {
   display: flex;
-  margin-bottom: 86px;
-  /*justify-content: space-between;*/
+  margin-bottom: 86px;  
 }
 
 .main-bottom a {
