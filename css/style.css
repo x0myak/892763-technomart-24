@@ -183,15 +183,15 @@ p {
   display: flex;
 }
 
-.header-middle-level h1 {
+.header-middle-level .h1 {
   margin: 0;
 
-  width: 196px;
+  width: 192px;
   padding-left: 53px;
 
   font-size: 16px;
   font-style: italic;
-  font-weight: 400;
+  font-weight: 400; 
   line-height: 23px;
   text-align: left;
   background-color: #f4f7f9;
@@ -261,10 +261,14 @@ p {
   justify-content: space-between;
 }
 
-.user-block-top-exit {
+.user-block-top-exit:after {
+  content: "";
+  position: absolute;
+  top: 27px;
+  left: 24px;
   width: 60px;
   height: 42px;
-  background: url(../img/icon-logout.svg) no-repeat center;     
+  background-image: url(../img/icon-logout.svg);     
 }
 
 .user-block-top-profile:hover {
@@ -407,8 +411,11 @@ p {
   justify-content: space-between;
 }
 
-fieldset {
+fieldset,
+legend {
   border: none;
+  margin: 0;
+  padding: 0;
 }
 
 .filters {
@@ -418,17 +425,64 @@ fieldset {
   color: #000000;
 }
 
+.filters b {
+  font-weight: 400;
+}
+
 .filters legend {
   font-size: 17px;
   font-weight: 700;
   line-height: 30px;
 }
 
-.filter-producers li {
-  margin-bottom: 21px;
+.filter-producers { 
+  position: relative;
+  margin-top: 25px; 
+  margin-bottom: 26px;  
+  border-bottom: 1px solid #c5c5c5;  
+}
+
+.filter-chargers {
+  margin-top: 27px;
+  margin-bottom: 83px;
+}
+
+.filters li {
+  padding-bottom: 24px;  
+}
+
+.filter-option b {
+  margin-left: 30px;
+}
+
+.filter-option::before {
+  content: "";
+  position: absolute; 
+  
+  width: 27px;
+  height: 25px;  
+
+  background-image: url("../img/checkbox-off.svg");
+  background-repeat: no-repeat;   
+  opacity: 0.3;
+}
+
+.filter-producers .filter-option:first-child::before,
+.filter-producers .filter-option:nth-child(3)::before {
+  background-image: url("../img/checkbox-on.svg");
+}
+
+.filter-chargers .filter-option:first-child::before {
+   background-image: url("../img/radio-on.svg");
+}
+
+.filter-chargers .filter-option:nth-child(2)::before {
+   background-image: url("../img/radio-off.svg");
 }
 
 .filters button {
+  width: 140px;
+  min-height: 38px;
   text-transform: inherit;
   font-size: 13px;
   line-height: 18px;
