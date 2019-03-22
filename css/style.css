@@ -443,6 +443,81 @@ legend {
   color: #000000;
 }
 
+.range-controls { 
+  position: relative; 
+  width: 220px;
+  height: 80px;
+  padding-top: 39px;
+  padding-left: 20px;
+  margin-top: 21px;
+  margin-bottom: 9px;
+  box-sizing: border-box;
+
+  background-color: #f7f3ec;  
+}
+
+.range-controls .scale { 
+  width: 180px;
+  height: 2px;
+  background: #d7dcde;
+}
+
+.range-controls .bar {
+  width: 84%;
+  height: 2px;
+  background: #63a63e;
+}
+
+.range-toggle {
+  position: absolute;
+  top: 27px;
+  
+  width: 20px;
+  height: 22px;
+  background: url("../img/filter-button.svg");
+}
+
+.range-toggle-min {
+  left: 5%;
+}
+
+.range-toggle-max {
+  left: 75%;
+}
+
+.price-controls {
+  position: relative;    
+  border-bottom: 1px solid grey;
+}
+
+.price-controls label {
+  display: inline-block;
+  margin-bottom: 25px;  
+}
+
+.price-controls input {
+  width: 95px;
+  height: 38px;
+  color: inherit;
+  font: inherit;
+  text-align: center;
+
+  background: none;
+  border: none;
+}
+
+.price-controls .min-price,
+.price-controls .max-price {  
+  font-size: 17px;
+  line-height: 18px;
+  font-family: "PT Sans", Arial, sans-serif;
+  background-color: #f7f3ec;
+}
+
+.price-controls .min-price {
+  margin-right: 25px;
+}
+
 .filters b {
   font-weight: 400;
 }
@@ -483,6 +558,10 @@ legend {
   background-image: url("../img/checkbox-off.svg");
   background-repeat: no-repeat;   
   opacity: 0.3;
+}
+
+.producers {
+  margin-top: 25px;
 }
 
 .filter-producers .filter-option:first-child::before,

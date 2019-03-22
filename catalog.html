@@ -72,9 +72,21 @@
             <h2>Фильтр:</h2>
             <form class="filters-form uppercase" method="get" action="https://echo.htmlacademy.ru">
               <fieldset>
-                <legend>Цена</legend>
+                <legend>Цена:</legend>                
+                  <div class="range-controls">
+                    <div class="scale">
+                      <div class="bar"></div>
+                    </div>
+                    <div class="range-toggle range-toggle-min"></div>
+                    <div class="range-toggle range-toggle-max"></div>
+                  </div>
+                   <div class="price-controls">
+                     <label class="min-price"><input type="text" name="min-price" value="0"></label>
+                     <label class="max-price"><input type="text" name="max-price" value="30000"></label>        
+                  </div>
+                
               </fieldset>
-              <fieldset>
+              <fieldset class="producers">
                 <legend>Производители:</legend>
                   <ul class="filter-producers">
                     <li class="filter-option">
