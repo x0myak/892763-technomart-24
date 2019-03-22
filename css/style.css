@@ -554,13 +554,20 @@ legend {
   padding-bottom: 24px;  
 }
 
-.filter-option b {
-  margin-left: 30px;
+.filter-option {
+  padding-left: 45px;
 }
 
-.filter-option::before {
+.filter-option label {
+  position: relative;
+  display: block;
+}
+
+.filter-input-checkbox + label::before {
   content: "";
   position: absolute; 
+  left: -42px;
+  top: 0;
   
   width: 27px;
   height: 25px;  
@@ -570,22 +577,52 @@ legend {
   opacity: 0.3;
 }
 
+.filter-input-checkbox:checked + label::after {
+  content: "";
+  position: absolute;
+  left: -42px;
+  top: 0;
+
+  width: 27px;
+  height: 25px;  
+  
+  background-image: url("../img/checkbox-on.svg");
+  background-repeat: no-repeat;   
+  opacity: 0.3;
+}
+
 .producers {
   margin-top: 25px;
 }
 
-.filter-producers .filter-option:first-child::before,
-.filter-producers .filter-option:nth-child(3)::before {
-  background-image: url("../img/checkbox-on.svg");
+.filter-input-radio + label::before {
+  content: "";
+  position: absolute; 
+  left: -42px;
+  top: 0;
+  
+  width: 27px;
+  height: 25px;  
+
+  background-image: url("../img/radio-off.svg");
+  background-repeat: no-repeat;   
+  opacity: 0.3;
 }
 
-.filter-chargers .filter-option:first-child::before {
-   background-image: url("../img/radio-on.svg");
+.filter-input-radio:checked + label::before {
+  content: "";
+  position: absolute; 
+  left: -42px;
+  top: 0;
+  
+  width: 27px;
+  height: 25px;  
+
+  background-image: url("../img/radio-on.svg");
+  background-repeat: no-repeat;   
+  opacity: 0.3;
 }
 
-.filter-chargers .filter-option:nth-child(2)::before {
-   background-image: url("../img/radio-off.svg");
-}
 
 .filters button {
   width: 140px;
