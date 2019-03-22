@@ -528,14 +528,21 @@ legend {
   margin-right: 25px;
 }
 
-.filters b {
-  font-weight: 400;
-}
-
 .filters legend {
   font-size: 17px;
   font-weight: 700;
   line-height: 30px;
+}
+
+.filters h2 {
+  width: 220px;
+  padding: 14px 0 15px 18px;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-family: "PT Sans", Arial, sans-serif;
+  background-color: #f7f3ec;
 }
 
 .filter-producers { 
@@ -622,7 +629,6 @@ legend {
   background-repeat: no-repeat;   
   opacity: 0.3;
 }
-
 
 .filters button {
   width: 140px;
