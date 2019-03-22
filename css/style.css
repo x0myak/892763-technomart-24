@@ -258,8 +258,9 @@ p {
 
 .user-block-list {
   display: flex;
-  width: 100%;
+
   justify-content: space-between;
+  margin-left: 69px;
 }
 
 .user-block-top-exit {
