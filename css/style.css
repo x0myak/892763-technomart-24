@@ -191,7 +191,7 @@ p {
 
   font-size: 16px;
   font-style: italic;
-  font-weight: 400; 
+  font-weight: 400;
   line-height: 23px;
   text-align: left;
   background-color: #f4f7f9;
@@ -274,14 +274,14 @@ p {
   width: 60px;
   height: 42px;
   background-image: url(../img/icon-logout.svg);
-  background-repeat: no-repeat;   
-  opacity: 0.3;  
+  background-repeat: no-repeat;
+  opacity: 0.3;
 }
 
 .user-block-top-exit::after:hover,
 .user-block-top-exit::after:focus {
   background-image: url(../img/icon-logout.svg);
-  background-repeat: no-repeat;   
+  background-repeat: no-repeat;
   opacity: 1;
 }
 
@@ -314,7 +314,7 @@ p {
 }
 
 .user-block-bottom {
-  display: flex;  
+  display: flex;
   width: 250px;
   font-size: 16px;
   text-decoration: underline;
@@ -390,6 +390,109 @@ p {
   font-family: "PT Sans", Arial, sans-serif;
 }
 
+.equipment-item,
+.sales,
+.delievery {
+  width: 300px;
+  height: 123px;
+}
+
+.equipment-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.position {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.equipment-list a,
+.other a {
+  display: block;
+  width: 135px;
+  min-height: 38px;
+  margin-left: 25px;
+  padding: 9px 22px 11px;
+  box-sizing: border-box;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  border-radius: 5px;
+  color: #ffffff;
+  background-color: #000000;
+  opacity: 0.1;
+}
+
+.equipment-list h2,
+.other h2 {
+  margin: 0;
+  padding: 24px 0 14px 23px;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: left;
+}
+
+.equipment-item-drills {
+  width: 620px;
+  height: 266px;
+  background: url("../img/drills-index.png");
+}
+
+.equipment-item-drills h2 {
+  padding: 0;
+  margin: 0;
+  padding: 27px 0 10px 24px;
+  font-size: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.equipment-item-drills a {
+  padding-left: 24px;
+  font-size: 18px;
+  line-height: 24px;
+  color: #ffffff;
+}
+
+.equipment-item-materials {
+  background-color: #ffbf47;
+  background-image: url("../img/icon-paint.svg");
+  background-repeat: no-repeat;
+  background-position: 80%;
+}
+
+.equipment-item-instruments {
+  background-color: #3bbce3;
+  background-image: url("../img/icon-drill.svg");
+  background-repeat: no-repeat;
+  background-position: 85%;
+}
+
+.equipment-item-technics {
+  background-color: #dc91d8;
+  background-image: url("../img/icon-tractor.svg");
+  background-repeat: no-repeat;
+  background-position: 85%;
+}
+
+.sales {
+  background-color: #8ed78f;
+  margin-bottom: 20px;
+  background-image: url("../img/icon-trolley.svg");
+  background-repeat: no-repeat;
+  background-position: 85%;
+}
+
+.delievery {
+  background-color: #ffc047;
+  background-image: url("../img/icon-car.svg");
+  background-repeat: no-repeat;
+  background-position: 85%;
+}
+
 .catalog {
   width: 700px;
   margin-left: 21px;
@@ -453,8 +556,8 @@ legend {
   color: #000000;
 }
 
-.range-controls { 
-  position: relative; 
+.range-controls {
+  position: relative;
   width: 220px;
   height: 80px;
   padding-top: 39px;
@@ -463,10 +566,10 @@ legend {
   margin-bottom: 9px;
   box-sizing: border-box;
 
-  background-color: #f7f3ec;  
+  background-color: #f7f3ec;
 }
 
-.range-controls .scale { 
+.range-controls .scale {
   width: 180px;
   height: 2px;
   background: #d7dcde;
@@ -481,7 +584,7 @@ legend {
 .range-toggle {
   position: absolute;
   top: 27px;
-  
+
   width: 20px;
   height: 22px;
   background: url("../img/filter-button.svg");
@@ -496,13 +599,13 @@ legend {
 }
 
 .price-controls {
-  position: relative;    
+  position: relative;
   border-bottom: 1px solid grey;
 }
 
 .price-controls label {
   display: inline-block;
-  margin-bottom: 25px;  
+  margin-bottom: 25px;
 }
 
 .price-controls input {
@@ -517,7 +620,7 @@ legend {
 }
 
 .price-controls .min-price,
-.price-controls .max-price {  
+.price-controls .max-price {
   font-size: 17px;
   line-height: 18px;
   font-family: "PT Sans", Arial, sans-serif;
@@ -545,11 +648,11 @@ legend {
   background-color: #f7f3ec;
 }
 
-.filter-producers { 
+.filter-producers {
   position: relative;
-  margin-top: 25px; 
-  margin-bottom: 26px;  
-  border-bottom: 1px solid #c5c5c5;  
+  margin-top: 25px;
+  margin-bottom: 26px;
+  border-bottom: 1px solid #c5c5c5;
 }
 
 .filter-chargers {
@@ -558,7 +661,7 @@ legend {
 }
 
 .filters li {
-  padding-bottom: 24px;  
+  padding-bottom: 24px;
 }
 
 .filter-option {
@@ -572,15 +675,15 @@ legend {
 
 .filter-input-checkbox + label::before {
   content: "";
-  position: absolute; 
+  position: absolute;
   left: -42px;
   top: 0;
-  
+
   width: 27px;
-  height: 25px;  
+  height: 25px;
 
   background-image: url("../img/checkbox-off.svg");
-  background-repeat: no-repeat;   
+  background-repeat: no-repeat;
   opacity: 0.3;
 }
 
@@ -591,10 +694,10 @@ legend {
   top: 0;
 
   width: 27px;
-  height: 25px;  
-  
+  height: 25px;
+
   background-image: url("../img/checkbox-on.svg");
-  background-repeat: no-repeat;   
+  background-repeat: no-repeat;
   opacity: 0.3;
 }
 
@@ -604,29 +707,29 @@ legend {
 
 .filter-input-radio + label::before {
   content: "";
-  position: absolute; 
+  position: absolute;
   left: -42px;
   top: 0;
-  
+
   width: 27px;
-  height: 25px;  
+  height: 25px;
 
   background-image: url("../img/radio-off.svg");
-  background-repeat: no-repeat;   
+  background-repeat: no-repeat;
   opacity: 0.3;
 }
 
 .filter-input-radio:checked + label::before {
   content: "";
-  position: absolute; 
+  position: absolute;
   left: -42px;
   top: 0;
-  
+
   width: 27px;
-  height: 25px;  
+  height: 25px;
 
   background-image: url("../img/radio-on.svg");
-  background-repeat: no-repeat;   
+  background-repeat: no-repeat;
   opacity: 0.3;
 }
 
@@ -668,10 +771,10 @@ legend {
   position: absolute;
   top: -1px;
   right: -1px;
-  
+
   width: 60px;
   height: 60px;
-  
+
   text-indent: -1000px;
   overflow: hidden;
   z-index: 20;
@@ -727,24 +830,24 @@ legend {
   position: absolute;
   top: 0;
   left: 0;
-  
+
   width: 218px;
   height: 88px;
   padding: 40px 0;
-  
+
   background-color: rgba(255,255,255,0.9);
   z-index: 10;
   font-size: 14px;
   line-height: 18px;
 }
 
-.buy {  
-  color: inherit;  
+.buy {
+  color: inherit;
 }
 
 .bookmark {
   color: #32425c;
-  background: white;  
+  background: white;
 }
 
 .catalog-item .actions .buy,
@@ -754,12 +857,12 @@ legend {
   margin: 0 auto;
   margin-bottom: 7px;
   padding: 7px 0;
-  
+
   background-color: #63a63e;
   border: 3px solid #63a63e;
   border-bottom-color: #367315;
   border-radius:3px;
-  
+
   color: white;
   font-size: 14px;
   font-weight: normal;
@@ -813,26 +916,26 @@ legend {
 .popular-producers-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;  
+  justify-content: space-between;
   margin-bottom: 65px;
 }
 
 .popular-producer-item{
   display: flex;
   width: 220px;
-  height: 145px;  
+  height: 145px;
   margin-bottom: 20px;
   border: solid 1px #eaeaea;
   box-sizing: border-box;
   align-items: center;
-  justify-content: center;  
+  justify-content: center;
 }
 
 .popular-producers h2>a,
 .popular-goods h2>a {
   display: inline-block;
   width: 253px;
-  padding: 10px 0;  
+  padding: 10px 0;
   margin-left: 269px;
   font-size: 14px;
   line-height: 18px;
@@ -853,7 +956,7 @@ legend {
 
 .main-bottom .container {
   display: flex;
-  margin-bottom: 86px;  
+  margin-bottom: 86px;
 }
 
 .main-bottom a {
@@ -955,7 +1058,7 @@ legend {
   margin-top: auto;
 }
 
-.inner-main-bottom {  
+.inner-main-bottom {
   padding-top: 67px;
   padding-bottom: 73px;
   color: #000000;
@@ -974,7 +1077,7 @@ legend {
   font-family: "PT Sans", Arial, sans-serif;
 }
 
-.pagination { 
+.pagination {
   margin-top: 31px;
   margin-bottom: 60px;
   margin-left: 240px;
@@ -1185,7 +1288,7 @@ legend {
   display: none;
 }
 
-.modal-feedback {  
+.modal-feedback {
   width: 620px;
   height: 430px;
   box-shadow: 0px 20px 40px 0 rgba(0, 0, 0, 0.75);
