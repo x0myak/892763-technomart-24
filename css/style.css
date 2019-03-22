@@ -403,16 +403,26 @@ p {
 
 .breadcrumbs {
   display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
   margin-bottom: 25px;
 }
 
-.breadcrumbs a {
-   position: relative;
+.breadcrumbs li {
+  position: relative;
+  margin-right: 39px;
 }
 
-.breadcrumbs a::after {
+.breadcrumbs li::after {
   content: "";
   position: absolute;
+  top: 3px;
+  right: -25px;
+  width: 8px;
+  height: 12px;
+  background: url("../img/icon-right-small.svg");
 }
 
 .inner-page .catalog-header {
